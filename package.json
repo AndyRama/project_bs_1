@@ -14,12 +14,12 @@
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
-    "lucide-react": "^0.451.0",
     "@react-email/components": "0.0.19",
     "@react-email/tailwind": "0.0.18",
     "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.4",
+    "lucide-react": "^0.451.0",
     "next": "^14.2.15",
     "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
