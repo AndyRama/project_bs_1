@@ -43,13 +43,13 @@ const footerContent = {
       heading: '',
       links: [
         {
-          href: '#',
+          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fproject-bs-1.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
           label: 'LighHouse',
           target: '_blank',
         },
         {
-          href: '#',
-          label: 'CO2',
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Co²',
           badge: 'New',
           target: '_blank',
         },
@@ -103,7 +103,7 @@ const Footer = ({ className }) => {
                           }
                             text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-red-500`}
                         >
-                          {link.label === 'CO2' ? (
+                          {link.label === 'Co²' ? (
                             <>
                               <span>{link.label}</span>
                               <span
