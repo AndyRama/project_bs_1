@@ -15,7 +15,6 @@ const navigationMenu = [
   { href: '/', label: 'Accueil' },
   { href: '/projects', label: 'Services' },
   { href: '/blog', label: 'Blog' },
-  { href: '/contact', label: 'Contact' },
 ];
 export default function Navigation() {
   const [open, setOpen] = useState(false);

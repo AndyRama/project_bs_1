@@ -2,17 +2,14 @@
 
 import React from 'react'
 import { BiSolidHeart } from 'react-icons/bi'
-import { FaGithub } from 'react-icons/fa'
-import IconLinkedin from './../../public/images/linkedin.svg'
-import IconMalt from './../../public/images/malt.svg'
-
 import Link from 'next/link'
 import Image from 'next/image'
+import IconLogo from '@/app/express-depannage.jpg'
 
 const footerContent = {
   footerLinks: [
     {
-      heading: '',
+      heading: 'Site',
       links: [
         {
           href: '/',
@@ -23,24 +20,60 @@ const footerContent = {
           label: 'Blog',
           badge: 'New',
         },
+        {
+          href: '/projects',
+          label: 'Services',
+        },
+      ],
+    },
+    {
+      heading: 'Ville',
+      links: [
+        {
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Bordeaux',
+          badge: 'New',
+          target: '_blank',
+        },
+        {
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Mérignac',
+          badge: 'New',
+          target: '_blank',
+        },
+        {
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Pessac',
+          badge: 'New',
+          target: '_blank',
+        },
       ],
     },
     {
       heading: '',
       links: [
         {
-          href: '/projects',
-          label: 'Projects',
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Bordeaux',
           badge: 'New',
+          target: '_blank',
         },
         {
-          href: '/contact',
-          label: 'Contact',
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Mérignac',
+          badge: 'New',
+          target: '_blank',
+        },
+        {
+          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
+          label: 'Pessac',
+          badge: 'New',
+          target: '_blank',
         },
       ],
     },
     {
-      heading: '',
+      heading: 'Performance',
       links: [
         {
           href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fproject-bs-1.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
@@ -64,7 +97,7 @@ const Copyright = () => {
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024
         <Link href="/" className="text-red-500 ml-1 mr-1">
-          Express Dépannage Plomberie 
+          Express Dépannage Plomberie
         </Link>
         Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
@@ -79,16 +112,34 @@ const Copyright = () => {
 const Footer = ({ className }) => {
   return (
     <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
-      <div className="container mx-auto px-4 relative mt-10">
-        <div className="md:flex ">
-          <div className="md:w-4/12 mb-5 md:mb-0">
-            <Link href="#" className="text-[28px] text-[#2F2E2E] font-bold">
-              Express Dépannage
-              <span className="text-[#2F2E2E]">.</span>
+      <div className="container mx-auto px-4 relative mt-8">
+        <div className="lg:flex ">
+          <div className="mb-6 md:mb-0">
+            <Link
+              href="/"
+              className=" flex flex-row text-2xl sfont-bold "
+            >
+              {/* Logo - Navigation - left */}
+              <span className="pt-2 py-4 pr-2">
+                <Image src={IconLogo} weight={60} height={60} alt="logo" />
+              </span>
+              <span className="text-red-500">
+                Express <br /> Dépannage Plomberie
+              </span>
             </Link>
+            {/* <div className='ml-10 md:ml-50'> */}
+              <p className=" text-start text-black">
+                217 avenue rue de la <br className="hidden md:contents"/> marne 33700 Mérignac
+              </p>
+              <p className="text-start text-black">
+                plomberie.depannage33@gmail.com
+              </p>
+              <p className=" md:text-start text-black font-bold text-center"> 05.56.34.89.79</p>
+              <p className=" md:text-start text-red-500 font-bold text-center"> 06.56.34.89.79</p>
+            {/* </div> */}
           </div>
-          <div className="md:w-7/12 ">
-            <div className="grid grid-cols-3 md:grid-cols-3 ">
+          <div className="md:w-7/12 mx-auto ">
+            <div className="grid grid-cols-2 md:grid-cols-4 ">
               {footerContent.footerLinks.map((item, index) => (
                 <div className="mb-5 md:mb-0" key={item.heading}>
                   <h3 className="text-gray-400 mb-3">{item.heading}</h3>
@@ -127,23 +178,6 @@ const Footer = ({ className }) => {
           </div>
         </div>
 
-        {/* Version 2 */}
-        <div className="text-right items-right mx-auto text-sm pb-0">
-          <Link
-            href="/document/privacy"
-            target="_blank"
-            className="text-red-500 hover:text-[#2F2E2E]"
-          >
-            Privacy{' '}
-          </Link>{' '}
-          <Link
-            href="/document/terms"
-            target="_blank"
-            className="text-[#2F2E2E] hover:text-red-500"
-          >
-            Terms{' '}
-          </Link>
-        </div>
         <Copyright />
       </div>
     </footer>

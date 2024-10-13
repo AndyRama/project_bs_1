@@ -1,6 +1,6 @@
 import React from 'react'
 import SubHero from '../components/project/SubHero'
-import Subscribe from '../components/Subscribe'
+import Cta1 from '../components/Cta1'
 import Hero from '../components/Hero'
 import GridPricing from '../components/GridPricing'
 import CardProgram from '../components/CardProgram'
@@ -22,6 +22,7 @@ const page = () => {
         description={`Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.`}
       />      
       <CardProgram/>
+      <Cta1/>
       <GridPricing/>
       <Hero/>
     </>

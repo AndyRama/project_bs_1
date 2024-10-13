@@ -96,7 +96,7 @@ const programs = [
 const CardProgram = ({ className }) => {
   return (
     <section className={`${className}`}>
-      <div className="container px-4 md:px-8 mx-auto w-11/12 mb-10">
+      <div className="container px-4 mx-auto w-12/12 mb-10">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
           whileInView={{
@@ -129,14 +129,39 @@ const CardProgram = ({ className }) => {
         </motion.h2>
       </div>
 
-      <div className="container px-4 md:px-16 mx-auto">
+      <div className="container px-4 mx-auto">
+        
         {programs.map((program, index) => (
           <div
             key={index}
-            className="md:flex justify-between space-x-0 mb-10"
+            className="md:flex justify-arround space-x-0 mb-10"
           >
-            <div className="lg:w-8/12">
-              <motion.h1
+            <div className="md:w-6/12 px-4">
+            <motion.div
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    delai: 0.4,
+                    duration: 0.5,
+                  },
+                }}
+                viewport={{ once: true }}
+                className="z-[1] relative bg-cover bg-center"
+              >
+                <Image
+                  src={program.image}
+                  width={300}
+                  height={400}
+                  alt="program image"
+                  className="rounded-md h-[300px] w-[400px] "
+                />
+              </motion.div>
+            
+            </div>
+            <div className="md:w-6/12 mb-10">
+            <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{
                   opacity: 1,
@@ -172,7 +197,7 @@ const CardProgram = ({ className }) => {
               >
                 <Link
                   href={program.btn.href}
-                  alt="prestations page"
+                  alt=" autre prestations "
                   className="transistion-all duration-300 ease-in-out text-[14px] 
                     tracking-[2px] font-bold uppercase text-[#2F2E2E] hover:text-red-500 
                     hover:border-red-400 bg-transparent py-4 px-5 rounded inline-block 
@@ -181,29 +206,6 @@ const CardProgram = ({ className }) => {
                   {program.btn.label}
                 </Link>
               </motion.button>
-            </div>
-            <div className="md:w-6/12 mb-10">
-              <motion.div
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    delai: 0.4,
-                    duration: 0.5,
-                  },
-                }}
-                viewport={{ once: true }}
-                className="z-[1] relative bg-cover bg-center"
-              >
-                <Image
-                  src={program.image}
-                  width={300}
-                  height={400}
-                  alt="program image"
-                  className="rounded-md h-[300px] w-[400px] "
-                />
-              </motion.div>
             </div>
           </div>
         ))}
