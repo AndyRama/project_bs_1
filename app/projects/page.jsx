@@ -4,7 +4,7 @@ import Cta1 from '../components/Cta1'
 import Hero from '../components/Hero'
 import GridPricing from '../components/GridPricing'
 import CardProgram from '../components/CardProgram'
-
+import FAQ from '../components/FAQ'
 import banner from './../../public/images/Express3.png'
 
 export const metadata = {
@@ -25,6 +25,7 @@ const page = () => {
       <Cta1/>
       <GridPricing/>
       <Hero/>
+      <FAQ/>
     </>
   )
 }

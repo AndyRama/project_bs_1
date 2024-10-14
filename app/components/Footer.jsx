@@ -111,6 +111,7 @@ const Copyright = () => {
 
 const Footer = ({ className }) => {
   return (
+    <div>
     <footer className={`${className} overflow-hidden w-full h-full z-[2] `}>
       <div className="container mx-auto px-4 relative mt-8">
         <div className="lg:flex ">
@@ -134,8 +135,8 @@ const Footer = ({ className }) => {
               <p className="text-start text-black">
                 plomberie.depannage33@gmail.com
               </p>
-              <p className=" md:text-start text-black font-bold text-center"> 05.56.34.89.79</p>
-              <p className=" md:text-start text-red-500 font-bold text-center"> 06.56.34.89.79</p>
+              <p className=" md:text-start text-black font-bold text-center"> 05.56.34.89.79 - <span className="text-red-500 font-bold text-center">06.56.34.89.79</span></p>
+              <p className=" md:text-start text-red-500 font-bold text-center"> </p>
             {/* </div> */}
           </div>
           <div className="md:w-7/12 mx-auto ">
@@ -181,6 +182,7 @@ const Footer = ({ className }) => {
         <Copyright />
       </div>
     </footer>
+    </div>
   )
 }
 

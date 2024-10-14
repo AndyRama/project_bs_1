@@ -1,8 +1,9 @@
 import Hero from './components/Hero'
 import Hero2 from './components/Hero2'
 import RecentBlog from './components/RecentBlog'
-import Stats from './components/Stats'
+import FAQ from './components/FAQ'
 import Cta1 from './components/Cta1'
+import Cta2 from './components/Cta2'
 import CardProgram from './components/CardProgram'
 import DescriptionCard from './components/DescriptionCard'
 import RecentProject2 from './components/RecentProject2'
@@ -21,9 +22,10 @@ export default function Home() {
       <RecentProject2 className="pt-14 pb-15 " />
       <Cta1/>
       <CardProgram />
-      <Cta1/>
+      <Cta2/>
       <GridPricing className="pt-14 pb-14 " />
       <Cta1/>
+      <FAQ/>
       <RecentBlog className="pt-14 pb-15 " />
       <Hero className="pt-32 md:pt-22 pb-22" />
     </>

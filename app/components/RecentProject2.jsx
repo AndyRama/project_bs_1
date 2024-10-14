@@ -86,7 +86,7 @@ const RecentProject = ({ className }) => {
     <section className={`${className}`}>
       <div className="container mx-auto rounded-md ">
         <div className=" px-4 lg:flex justify-left mb-2">
-          <div className="w-12/12">
+          <div className="w-10/12">
             {recentProjectContent.heading.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -99,7 +99,7 @@ const RecentProject = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-[#ff5e29]"
+                className="uppercase tracking-[3px] text-sm inline-block text-black"
               >
                 {recentProjectContent.heading.subTitle}
               </motion.span>
@@ -116,7 +116,7 @@ const RecentProject = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-[#2F2E2E]"
+                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-red-500"
               >
                 {recentProjectContent.heading.title}
               </motion.h2>
@@ -140,13 +140,13 @@ const RecentProject = ({ className }) => {
             </motion.p>
           </div>
         </div>
-      </div>
+      
 
       <div
-        className="px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4
+        className="px-4 grid grid-cols-1 md:grid-cols-3
           gap-4 w-12/12 mx-auto mt-10 mb-10"
       >
-        {projects.slice(0, 4).map((project, index) => (
+        {projects.slice(0, 3).map((project, index) => (
           <ProjectCard key={index} index={index} project={project} />
         ))}
 
@@ -171,6 +171,7 @@ const RecentProject = ({ className }) => {
             Voir plus de services
           </Link>
         </motion.div>
+      </div>
       </div>
     </section>
   )

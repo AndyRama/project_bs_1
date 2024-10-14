@@ -44,14 +44,14 @@ const Hero = ({ className }) => {
     <section className={`${className}`} ref={ref}>
       {/* Image - main - bg-cover  */}
       <div
-        className="md-h-[120vh] -mt-[44px] bg-fixed bg-cover flex items-center justify-center"
+        className="md-h-[110vh] -mt-[36px] bg-fixed bg-cover flex items-center justify-center"
         style={{
           backgroundImage: `url('/images/bg_home.jpg')`,
         }}
       >
         <div className="px-4 w-full flex justify-center pt-28 pb-28 text-center">
           <div className="space-y-8 max-w-4xl">
-            {/* heur- intervention */}
+            {/* heure - intervention */}
             <div className="grid grid-cols-2 gap-4 mb-8">
               {statContent.stats.map((stat) => (
                 <motion.div
@@ -84,7 +84,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="text-white font-bold text-4xl md:text-6xl lg:text-8xl mb-2"
+                className="text-white font-bold text-4xl md:text-6xl lg:text-8xl"
               >
                 {heroContent.intro.title}
               </motion.h1>
@@ -116,7 +116,7 @@ const Hero = ({ className }) => {
                   transition: { delay: 0.2, duration: 0.5 },
                 }}
                 viewport={{ once: true }}
-                className="text-white text-xl xl:text-2xl mb-8 leading-relaxed mx-auto p-10"
+                className="text-white text-xl xl:text-2xl mb-8 leading-relaxed mx-auto"
               >
                 {heroContent.intro.description}
               </motion.p>

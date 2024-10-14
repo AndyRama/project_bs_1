@@ -46,10 +46,10 @@ const BlogContent = ({ post }) => {
       viewport={{ once: true }}
       className="pt-44 pb-20 px-4 md:px-8 lg:mx-auto"
     >
-      <div className="">
+      <div>
         <div className="text-center mb-16">
           {/* Content title post */}
-          <h2 className="text-[#2F2E2E] text-center lg:text-5xl/none font-medium">
+          <h2 className="text-[#2F2E2E] text-balance lg:text-5xl/none font-medium">
             {post.title}
           </h2>
 
@@ -80,8 +80,8 @@ const BlogContent = ({ post }) => {
           <Image
             src={post.image}
             width={1065}
-            height={400}
-            className="object-fit object-top rounded-md border w-Full md:w-12/12 md:h-[250px] border-gray-200 mx-auto"
+            height={250}
+            className="object-fit object-top rounded-md border w-full h[250px] md:h-[644px] border-gray-200 mx-auto"
             alt={post.title}
           />
         </div>

@@ -5,10 +5,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { allProjects } from '.contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
-
+import FAQ from '@/app/components/FAQ'
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import RecentBlog from '@/app/components/project/RecentBlog'
+
 function slugify(str) {
   return str
     .toLowerCase()
@@ -128,7 +129,10 @@ const ProjectContent = ({ project }) => {
           <MDXContent />
         </article>
       </div>
-
+      {/* FAQ*/}
+      <div className="mx-auto mt-20 lg:mt-32">
+        <FAQ />
+      </div>
       {/* More Projects */}
       <div className="mx-auto mt-20 lg:mt-32">
         <RecentBlog />
