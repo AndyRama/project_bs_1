@@ -2,17 +2,17 @@ import React from 'react'
 
 const CTA1 = () => {
   return (
-    <div className="bg-black text-white lg:py-12 py-6">
-      <div className="container h-[380] md:h-[180px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 md:px-8">
+    <div className="bg-[#1D1D1D] text-white lg:py-12 py-8">
+      <div className="container h-[380] md:h-[200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-4 md:px-8">
         {/* Partie gauche avec le texte et les numéros */}
         <div>
-          <h3 className="text-xl md:text-2xl lg:text-3xl font-bold mb-8 text-white">
+          <h3 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
             Expresse Dépannage intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie au
             <span className="text-red-500"> 05 56 34 89 79</span>
           </h3>
           <p className="text-lg bg-red-500 inline-block px-4 py-4 rounded-md font-bold">
             en cas d&apos;urgence :{' '}
-            <span className="bg-black px-2 py-2 rounded-md">
+            <span className="bg-[#1D1D1D] px-2 py-2 rounded-md">
               06 56 34 69 55
             </span>
           </p>

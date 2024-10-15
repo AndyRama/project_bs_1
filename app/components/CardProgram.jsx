@@ -52,45 +52,6 @@ const programs = [
     },
     image: '/images/plumber7.jpg',
   },
-  {
-    title: 'Pack 1 Musculation | Homme Femme',
-    subTitle: 'Personnel',
-    description:
-      'Coaching spécialisé pour les athlètes : si la compétition, le dépassement de soi et la discipline sont essentiels à votre vie et à votre bien-être, se fixer des objectifs concrets est un moyen efficace de les atteindre. Je vous propose un suivi musculation et alimentaire personnalisés pour relever les défis que vous vous fixerez.',
-    mount: '3 mois (minimum)',
-    time: '8h/semaine',
-    btn: {
-      href: '/prestations/#pack',
-      label: 'Ok, je change de vie !',
-    },
-    image: '/images/plumber7.jpg',
-  },
-  {
-    title: 'Pack 2 Musculation | Homme Femme',
-    subTitle: 'Personnel',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus pariatur soluta corrupti quisquam illo ducimus adipisci recusandae possimus tempora esse, aspernatur repudiandae cupiditate ipsum enim, quibusdam porro odio sit. Quis!',
-    mount: '3 mois (minimum)',
-    time: '8h/semaine',
-    btn: {
-      href: '/prestations/#pack',
-      label: 'Ok, je change de vie !',
-    },
-    image: '/images/plumber7.jpg',
-  },
-  {
-    title: 'Pack 3 Musculation | Homme Femme',
-    subTitle: 'Personnel',
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus pariatur soluta corrupti quisquam illo ducimus adipisci recusandae possimus tempora esse, aspernatur repudiandae cupiditate ipsum enim, quibusdam porro odio sit. Quis!',
-    mount: '3 mois (minimum)',
-    time: '8h/semaine',
-    btn: {
-      href: '/prestations/#pack',
-      label: 'Ok, je change de vie !',
-    },
-    image: '/images/plumber7.jpg',
-  },
 ]
 
 const CardProgram = ({ className }) => {

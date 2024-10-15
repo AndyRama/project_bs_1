@@ -9,11 +9,20 @@ import Image from 'next/image'
 
 const recentProjectContent = {
   heading: {
-    title: 'Nos prestations',
-    subTitle: 'Services',
+    title: 'Interventions Courantes',
+    subTitle: 'Nos Services',
     description: '',
   },
 }
+
+function slugify(str) {
+  return str
+    .toLowerCase()
+    .replace(/[^a-z0-9 -]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+}
+
 const ProjectCard = ({ index, project }) => {
   index *= 0.05
   return (
@@ -42,22 +51,30 @@ const ProjectCard = ({ index, project }) => {
       </Link>
 
       <div className="p-6">
-        <p className="text-[#2F2E2E] mb-2 uppercase text-[12px] tracking-[1px]">
-          {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
-        </p>
-
-        <h3 className="mb-4 text-[rgb(255,73,41)]">
+        <h3 className="mb-4 text-red-500">
           <Link href={project.url} className="text-lg leading-none">
             {project.title}
           </Link>
         </h3>
+        <p className="text-[#2F2E2E] mb-2 uppercase text-[12px] tracking-[1px]">
+          {project.categories?.map((category, index) => (
+            <Link
+              href={`/projects/categories/${slugify(category.title)}`}
+              key={category.title}
+              className="font-medium"
+            >
+              {category.title}
+              {index < project.categories.length - 1 ? ` | ` : ``}
+            </Link>
+          ))}
+        </p>
 
         <p className="text-[#2F2E2E] mb-3 text-[14px] tracking-[1px]">
-          {project.excerpt}
+          {project.description}
         </p>
 
         <div>
-          <Link
+          {/* <Link
             href={project.url}
             className="text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
             inline-block  duration-300 transistion-all bg-white-600
@@ -71,7 +88,9 @@ const ProjectCard = ({ index, project }) => {
             hover:before:scale-z-[1] pb-2"
           >
             lire l&apos;article
-          </Link>
+          </Link> */}
+          <span className="text-red-500 ml-0 md:ml-32">{project.duration}</span>
+          <span className="text-red-500 ml-20 md:ml-32">{project.price}</span>
         </div>
       </div>
     </motion.div>
@@ -140,38 +159,37 @@ const RecentProject = ({ className }) => {
             </motion.p>
           </div>
         </div>
-      
 
-      <div
-        className="px-4 grid grid-cols-1 md:grid-cols-3
+        <div
+          className="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4
           gap-4 w-12/12 mx-auto mt-10 mb-10"
-      >
-        {projects.slice(0, 3).map((project, index) => (
-          <ProjectCard key={index} index={index} project={project} />
-        ))}
-
-        {/*  Content center - btn Right + de Article  */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-            transition: { delay: 0.2, duration: 0.5 },
-          }}
-          viewport={{ once: true }}
-          className="btn-container text-left mt-5"
         >
-          <Link
-            href="/projects"
-            className="transistion-all duration-300 ease-in-out text-[11.5px]
+          {projects.slice(0, 4).map((project, index) => (
+            <ProjectCard key={index} index={index} project={project} />
+          ))}
+
+          {/*  Content center - btn Right + de Article  */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.2, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+            className="btn-container text-left mt-5"
+          >
+            <Link
+              href="/projects"
+              className="transistion-all duration-300 ease-in-out text-[11.5px]
           tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-400 to-red-600 py-4 px-3
           rounded hover:text-black text-white inline-block items-start hover:bg-white hover:shadow-2xl 
           hover:shadow-1xl h-12"
-          >
-            Voir plus de services
-          </Link>
-        </motion.div>
-      </div>
+            >
+              Voir plus de services
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </section>
   )

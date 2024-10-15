@@ -140,7 +140,7 @@ export default function Navigation() {
                 rounded-md mt-1 ml-2'
               >
                 {/* <PhoneCall className='w-4 h-4 mt-2 mr-2 flex-row' />s */}
-                <span className='flex-row'>📞06.69.71.95.89</span>
+                <span className='flex-row'>06.69.71.95.89</span>
               </Link>
             </div>
           </div>

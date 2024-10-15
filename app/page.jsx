@@ -12,7 +12,7 @@ import GridPricing from './components/GridPricing'
 export default function Home() {
   return (
     <>
-      <Hero className="pt-32 md:pt-22 pb-22" />
+      <Hero className="pt-28 md:pt-32 " />
       {/* <Hero2 className="pt-32 md:pt-22 pb-22" /> */}
       <DescriptionCard
         className="mt-28 pb-22"

@@ -76,7 +76,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
         </div>
 
         <div className="lg:flex justify-center">
-          <div className="w:12/12 lg:flex gap-20 items-center md:items-start">
+          <div className="w:10/12 lg:flex gap-20 items-center md:items-start">
             <div className="mb-7 lg:mb-0 lg:w-12/12 lg:order-2 relative">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
@@ -93,7 +93,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="w-[350px] h-[400px] lg:max-w-2xl object-sticky rounded-md"
+                  className="hidden md:flex w-[350px] h-[400px] lg:max-w-2xl object-sticky rounded-md"
                   alt="Plumber"
                   width={250}
                   height={300}

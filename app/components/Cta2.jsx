@@ -3,7 +3,7 @@ import { FaUsers, FaClock, FaDollarSign, FaSmile } from 'react-icons/fa'
 
 function CTA2() {
   return (
-    <div className="bg-black text-white py-12">
+    <div className="bg-[#1D1D1D] text-white py-12">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 items-center text-center">
         {/* Icône et description 1 */}
         <div className="flex flex-col items-center">

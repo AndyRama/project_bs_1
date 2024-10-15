@@ -74,9 +74,9 @@ const Project = defineDocumentType(() => ({
       description: 'The image of the project',
       require: true,
     },
-    client: {
+    price: {
       type: 'string',
-      description: 'The client of the project',
+      description: 'The price of the project',
       require: true,
     },
     year: {
@@ -89,36 +89,15 @@ const Project = defineDocumentType(() => ({
       description: 'The duration of the project',
       require: true,
     },
-    realisation: {
-      type: 'string',
-      description: 'The type of the project realised',
-      require: true,
-    },
     description: {
       type: 'string',
       description: 'the description content of the project ',
-      required: true,
-    },
-    herb: {
-      type: 'string',
-      description: 'the url of the project ',
-      required: true,
-    },
-    github: {
-      type: 'string',
-      description: 'the code content of the project ',
       required: true,
     },
     categories: {
       type: 'list',
       of: Category,
       description: 'the categories image of the project',
-      required: true,
-    },
-    stacks: {
-      type: 'list',
-      of: Stack,
-      description: 'the stack of the project',
       required: true,
     },
   },
