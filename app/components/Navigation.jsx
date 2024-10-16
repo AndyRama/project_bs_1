@@ -70,7 +70,7 @@ export default function Navigation() {
           <div>
             <Link
               href='/'
-              className=' flex flex-row text-3xl md:text-4xl font-bold '
+              className='flex flex-row text-3xl md:text-4xl font-bold '
             >
               {/* Logo - Navigation - left */}
               <span className='my-[-10px] mx-3'>

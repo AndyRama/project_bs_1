@@ -89,8 +89,8 @@ const ProjectCard = ({ index, project }) => {
           >
             lire l&apos;article
           </Link> */}
-          <span className="text-red-500 ml-0 md:ml-32">{project.duration}</span>
-          <span className="text-red-500 ml-20 md:ml-32">{project.price}</span>
+          <span className="text-red-500 ml-0 ">{project.duration}</span>
+          <span className="text-red-500 ml-20">{project.price}</span>
         </div>
       </div>
     </motion.div>
@@ -169,7 +169,7 @@ const RecentProject = ({ className }) => {
           ))}
 
           {/*  Content center - btn Right + de Article  */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
               opacity: 1,
@@ -188,7 +188,7 @@ const RecentProject = ({ className }) => {
             >
               Voir plus de services
             </Link>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import { useState } from 'react';
 
 const FAQ = () => {
@@ -13,40 +14,60 @@ const FAQ = () => {
   // Liste des questions et réponses de la FAQ
   const faqs = [
     {
-      question: 'What are your rates?',
+      question: 'Quels sont vos tarifs ?',
       answer:
-        'Our rates are competitive and vary based on the type of service required. We provide a clear pricing grid for transparency. You can always expect no hidden fees with our services.',
+        'Nos tarifs sont compétitifs et varient en fonction du type d’intervention. Nous proposons une grille tarifaire claire, sans frais cachés, pour garantir une totale transparence.',
     },
     {
-      question: 'How quickly can you arrive?',
+      question: 'Notre rapidité d’intervention en 40 min ?',
       answer:
-        'We pride ourselves on our rapid response times. In most cases, our team can arrive within 30 minutes for emergency calls. Your plumbing issues are our priority!',
+        'Nous sommes fiers de nos délais d’intervention ultra-rapides. En cas d’urgence, nous pouvons être sur place en moins de 30 minutes. Vos problèmes de plomberie sont notre priorité !',
     },
     {
-      question: 'Do you offer warranties?',
+      question: 'Proposez-vous des garanties ?',
       answer:
-        'Yes, we provide warranties on all our services and parts. This ensures that you receive quality work that lasts. Your satisfaction is our guarantee!',
+        'Oui, toutes nos interventions et pièces sont couvertes par une garantie. Cela vous assure des réparations de qualité, durables dans le temps. Votre satisfaction est notre engagement.',
     },
     {
-      question: 'Are your plumbers licensed?',
+      question: 'Vos plombiers sont-ils certifiés ?',
       answer:
-        'Absolutely! All our plumbers are fully licensed and insured. They undergo regular training to stay updated on the latest plumbing techniques and regulations.',
+        'Bien entendu ! Tous nos plombiers sont certifiés et assurés. Ils suivent régulièrement des formations pour se tenir au courant des dernières techniques et réglementations en plomberie.',
     },
     {
-      question: 'What types of services?',
+      question: 'Quels types de services offrez-vous ?',
       answer:
-        'We offer a wide range of plumbing services, including emergency repairs, installations, and routine maintenance. Trust us for all your plumbing needs!',
+        'Nous proposons une large gamme de services, incluant les dépannages d’urgence, les installations, et l’entretien courant. Que ce soit pour une petite fuite ou un projet plus complexe, nous sommes là pour vous aider !',
+    },
+    {
+      question: 'Intervenez-vous en dehors de la Gironde ?',
+      answer:
+        'Nous sommes principalement actifs en Gironde pour des interventions rapides, mais nous pouvons nous déplacer au-delà selon les besoins et la nature de l’intervention.',
+    },
+    {
+      question: 'Comment éviter une urgence plomberie ?',
+      answer:
+        'Pour éviter une urgence, il est recommandé d’effectuer un entretien régulier de vos installations (débouchage, vérification des joints et des conduites d’eau, etc.). Nos services de maintenance peuvent vous aider à prévenir ces incidents.',
+    },
+    {
+      question: 'Comment contacter votre service d’urgence ?',
+      answer:
+        'Vous pouvez nous contacter 24h/24 et 7j/7 via notre numéro dédié aux urgences ou directement via notre formulaire en ligne. Nous sommes toujours disponibles pour intervenir rapidement.',
+    },
+    {
+      question: 'Quels sont vos délais pour un dépannage d’urgence ?',
+      answer:
+        'Nos délais sont en général de 30 à 60 minutes, selon votre localisation en Gironde. Nous faisons tout notre possible pour être sur place au plus vite.',
     },
   ];
 
   return (
-    <div className="container mx-auto w-full md:w-10/12 px-4 py-10">
+    <div className="container mx-auto w-full md:w-10/12 mt-12 px-4 ">
       <div className="grid md:grid-cols-3 gap-6">
         {/* Section gauche : titre et bouton de contact */}
         <div className="md:col-span-1">
           <h2 className="text-3xl font-bold mb-4">FAQs</h2>
           <p className="mb-4">
-            Here are some common questions about our 24/7 plumbing services and emergency interventions.
+            Retrouvez ici les réponses à vos questions sur nos services de plomberie d’urgence 24h/24 et 7j/7.
           </p>
           <button className="bg-black text-white px-4 py-2 rounded">Contact</button>
         </div>
@@ -59,7 +80,7 @@ const FAQ = () => {
                 className="flex justify-between items-center cursor-pointer py-4"
                 onClick={() => toggleAccordion(index)}
               >
-                <h3 className="text-lg font-semibold">{faq.question}</h3>
+                <h3 className="text-md md:text-lg font-semibold">{faq.question}</h3>
                 <span>{activeIndex === index ? '-' : '+'}</span>
               </div>
               {activeIndex === index && (

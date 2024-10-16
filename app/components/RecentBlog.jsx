@@ -63,7 +63,7 @@ const PostCard = ({ index, post }) => {
             inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full
-            before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c]before:origin-[100%, 50%]
+            before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c] before:origin-[100%, 50%]
             before:transistion-all before:duration-300 before:ease-in-out
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
@@ -84,8 +84,8 @@ const RecentBlog = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className=" container mx-auto rounded-md ">
-        <div className=" px-4 lg:flex mb-2">
+      <div className="container mx-auto rounded-md ">
+        <div className="px-4 lg:flex mb-2">
           <div className="lg:w-10/12">
             {recentBlogContent.heading.subTitle && (
               <motion.span
@@ -99,7 +99,7 @@ const RecentBlog = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-[#ff5e29]"
+                className="uppercase tracking-[3px] text-sm inline-block text-red500"
               >
                 {recentBlogContent.heading.subTitle}
               </motion.span>
