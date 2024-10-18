@@ -9,7 +9,6 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import PostCard from '@/app/components/blog/category/PostCard'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import Cta1 from '@/app/components/Cta1'
-import Cta2 from '@/app/components/Cta2'
 
 function slugify(str) {
   return str
@@ -114,7 +113,7 @@ const BlogContent = ({ post }) => {
               <Link
                 href="/blog"
                 className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase
-               bg-gradient-to-tr from-[#e78738] to-[#fb923c] hover:transparent hover:border-white px-5
+               bg-gradient-to-tr from-red-300 to-red-500 hover:transparent hover:border-white px-5
              text-white hover:shadown-2xl rounded-md"
               >
                 Voir tous mes articles
