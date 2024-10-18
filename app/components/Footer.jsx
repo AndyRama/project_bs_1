@@ -95,7 +95,7 @@ const Copyright = () => {
         </Link>
         Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
-        <Link href="https:www.andyramaroson.com" className="text-red-500 ml-1" target="_Blank">
+        <Link href="https://www.andyramaroson.com" className="text-red-500 ml-1" target="_Blank">
           Andy R.
         </Link>
       </div>
