@@ -6,6 +6,6 @@ import blog__lesSolutionsPourDBoucherVosCanalisationsMdx from './blog__Les-solut
 import blog__nextJsMdx from './blog__NextJs.mdx.json' assert { type: 'json' }
 import blog__panneDeChauffeEauMdx from './blog__Panne-de-chauffe-eau.mdx.json' assert { type: 'json' }
 import blog__reactMdx from './blog__React.mdx.json' assert { type: 'json' }
-import blog__webflowMdx from './blog__Webflow.mdx.json' assert { type: 'json' }
+import blog__article4Mdx from './blog__article4.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__fuiteDEauEnPleineNuitMdx, blog__iMdx, blog__lesSolutionsPourDBoucherVosCanalisationsMdx, blog__nextJsMdx, blog__panneDeChauffeEauMdx, blog__reactMdx, blog__webflowMdx]
+export const allPosts = [blog__fuiteDEauEnPleineNuitMdx, blog__iMdx, blog__lesSolutionsPourDBoucherVosCanalisationsMdx, blog__nextJsMdx, blog__panneDeChauffeEauMdx, blog__reactMdx, blog__article4Mdx]

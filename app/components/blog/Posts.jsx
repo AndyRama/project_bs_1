@@ -6,8 +6,6 @@ import Image from 'next/image'
 import { allPosts } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
-import CardCategory from './../../components/CardCategory'
-import BtnCategory from './../../components/BtnCategory'
 
 const Items = ({ currentItems }) => {
   return (

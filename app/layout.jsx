@@ -3,7 +3,6 @@ import './globals.css'
 
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
-import { FloatingFooter } from './components/FloatingFooter'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +24,6 @@ export default function RootLayout({ children }) {
         {children}
       </body>
       <Footer />
-      {/* <FloatingFooter className="fixed" /> */}
     </html>
   )
 }
