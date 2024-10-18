@@ -49,8 +49,8 @@ const PostCard = ({ post, index }) => {
         <div>
           <Link
             href={`/${urlWithoutBlog}`}
-            className="text-[#2F2E2E] uppercase text-[12px] tracking-[2px] border-b-2
-            pb-2 inline-block border-[#ff5e29]"
+            className="text-red-500 uppercase text-[12px] tracking-[2px] border-b-2
+            pb-2 inline-block border-red-500"
           >
             lire l&apos;article
           </Link>

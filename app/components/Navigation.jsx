@@ -62,7 +62,7 @@ export default function Navigation() {
   return (
     <div>
       <header
-        className='py-4 fixed w-full z-[10] bg-[#1D1D1D] opacity-90 '
+        className='py-4 fixed w-full z-[10] bg-black opacity-90 '
         alt='NavBar'
       >
         <h1 className='sr-only'>Navigation</h1>

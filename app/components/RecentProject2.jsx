@@ -104,7 +104,7 @@ const RecentProject = ({ className }) => {
   return (
     <section className={`${className}`}>
       <div className="container mx-auto rounded-md ">
-        <div className=" px-4 lg:flex justify-left mb-2">
+        <div className="px-4 md:px-0 lg:flex justify-left mb-2">
           <div className="w-10/12">
             {recentProjectContent.heading.subTitle && (
               <motion.span
@@ -161,15 +161,16 @@ const RecentProject = ({ className }) => {
         </div>
 
         <div
-          className="px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4
+          className="px-4 md:px-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4
           gap-4 w-12/12 mx-auto mt-10 mb-10"
         >
-          {projects.slice(0, 4).map((project, index) => (
+          {projects.slice(0, 8).map((project, index) => (
             <ProjectCard key={index} index={index} project={project} />
           ))}
 
+        </div>
           {/*  Content center - btn Right + de Article  */}
-          {/* <motion.div
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{
               opacity: 1,
@@ -184,12 +185,11 @@ const RecentProject = ({ className }) => {
               className="transistion-all duration-300 ease-in-out text-[11.5px]
           tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-400 to-red-600 py-4 px-3
           rounded hover:text-black text-white inline-block items-start hover:bg-white hover:shadow-2xl 
-          hover:shadow-1xl h-12"
+          hover:shadow-1xl h-12 mb-10"
             >
-              Voir plus de services
+              Voir tous les services
             </Link>
-          </motion.div> */}
-        </div>
+          </motion.div>
       </div>
     </section>
   )

@@ -21,11 +21,11 @@ export default function Home() {
       />
       <RecentProject2 className="pt-14 pb-15 " />
       <Cta1/>
-      <CardProgram />
-      <Cta2/>
+      {/* <CardProgram /> */}
       <GridPricing className="pt-14 pb-14 " />
-      <Cta1/>
+      <Cta2/>
       <FAQ/>
+      <Cta1/>
       <RecentBlog className="pt-14 pb-15 " />
       <Hero className="pt-32 md:pt-22 pb-22" />
     </>

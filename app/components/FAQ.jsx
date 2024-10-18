@@ -61,7 +61,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container mx-auto w-full md:w-10/12 mt-12 px-4 ">
+    <div className="container mx-auto w-full md:w-10/12 mt-20 pb-20 px-4 ">
       <div className="grid md:grid-cols-3 gap-6">
         {/* Section gauche : titre et bouton de contact */}
         <div className="md:col-span-1">

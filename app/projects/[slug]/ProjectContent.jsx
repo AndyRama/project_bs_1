@@ -9,6 +9,8 @@ import FAQ from '@/app/components/FAQ'
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
 import RecentBlog from '@/app/components/project/RecentBlog'
+import Cta1 from '@/app/components/Cta1'
+import Cta2 from '@/app/components/Cta2'
 
 function slugify(str) {
   return str
@@ -131,7 +133,14 @@ const ProjectContent = ({ project }) => {
       </div>
       {/* FAQ*/}
       <div className="mx-auto mt-20 lg:mt-32">
+        <Cta1 />
+      </div>
+      {/* FAQ*/}
+      <div className="mx-auto mt-20 lg:mt-32">
         <FAQ />
+      </div>
+      <div className="mx-auto mt-20 lg:mt-32">
+        <Cta2 />
       </div>
       {/* More Projects */}
       <div className="mx-auto mt-20 lg:mt-32">

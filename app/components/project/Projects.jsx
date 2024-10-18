@@ -6,8 +6,6 @@ import Image from 'next/image'
 import { allProjects } from 'contentlayer/generated'
 import { compareDesc, format, parseISO } from 'date-fns'
 import { motion } from 'framer-motion'
-import CardCategory from './../../components/CardCategory'
-import BtnCategory from './../../components/BtnCategory'
 
 const Items = ({ currentItems }) => {
   return (
@@ -45,7 +43,7 @@ const Items = ({ currentItems }) => {
                   transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
 
-                <div className="p-8">
+                <div className="px-4 mt-4">
                   <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[2px]">
                     {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
                     {project.realisation}
@@ -53,7 +51,7 @@ const Items = ({ currentItems }) => {
                   <h3>
                     <Link
                       href={project.url}
-                      className="text-lg leading-none mb-4"
+                      className="text-lg leading-none"
                     >
                       {project.title}
                     </Link>
@@ -67,31 +65,12 @@ const Items = ({ currentItems }) => {
               <div className="flex flex-row px-4 pb-6">
                 <Link
                   href={project.url}
-                  className={`text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-2 border
-                        border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-orange-900
-                        hover:border-orange-500`}
+                  className={
+                    `text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-2 border
+                   border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-orange-900
+                   hover:border-orange-500`}
                 >
                   plus d&apos;infos
-                </Link>
-
-                <Link
-                  href={production}
-                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
-                          border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-orange-900
-                          hover:border-orange-500`}
-                  target="_blank"
-                >
-                  Demo
-                </Link>
-
-                <Link
-                  href={repository}
-                  target="_blank"
-                  className={`text-[12px] tracking-[2px] uppercase flex mt-6 md:px-2 mr-2 border
-                        border-gray-200 px-4 pt-2 pb-0 rounded-md hover:text-bold hover:text-orange-900
-                        hover:border-orange-500`}
-                >
-                  Code
                 </Link>
               </div>
             </motion.div>
@@ -163,16 +142,10 @@ const Project = ({ className, itemsPerPage, archive = false, params }) => {
     <>
       <section className={`${className}`} ref={ref}>
         <div className="container mx-auto">
-          {/* <BtnCategory contentType="project" /> */}
           <div className="flex">
-            <div className=" w-12/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-3 gap-4 px-4">
+            <div className=" w-12/12 mx-auto mb-20 grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
               <Items currentItems={currentItems} />
             </div>
-
-            {/* <CardCategory
-              contentType="project"
-              className="hidden xl:contents ml-20"
-            /> */}
           </div>
         </div>
       </section>

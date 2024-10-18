@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {children}
       </body>
       <Footer />
-      <FloatingFooter className="fixed" />
+      {/* <FloatingFooter className="fixed" /> */}
     </html>
   )
 }
