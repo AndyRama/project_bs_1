@@ -2,7 +2,6 @@ import React from 'react'
 import { allProjects } from 'contentlayer/generated'
 import SubHero from '@/app/components/project/SubHero'
 import Projects from '@/app/components/project/category/Projects'
-import Subscribe from '@/app/components/Subscribe'
 
 const page = ({ params }) => {
   const newTitle = params?.slug.replace('-', ' ')
@@ -40,7 +39,6 @@ const page = ({ params }) => {
         params={params}
         itemsPerPage={50}
       />
-      <Subscribe className="py-16 pt-32 lg:py-32" />
     </>
   )
 }

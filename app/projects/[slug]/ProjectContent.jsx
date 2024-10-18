@@ -8,7 +8,7 @@ import { compareDesc, format, parseISO } from 'date-fns'
 import FAQ from '@/app/components/FAQ'
 import { motion } from 'framer-motion'
 import { getMDXComponent } from 'next-contentlayer/hooks'
-import RecentBlog from '@/app/components/project/RecentBlog'
+import RecentProject from '@/app/components/project/RecentProject'
 import Cta1 from '@/app/components/Cta1'
 import Cta2 from '@/app/components/Cta2'
 
@@ -144,7 +144,7 @@ const ProjectContent = ({ project }) => {
       </div>
       {/* More Projects */}
       <div className="mx-auto mt-20 lg:mt-32">
-        <RecentBlog />
+        <RecentProject />
       </div>
     </motion.div>
   )
