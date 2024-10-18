@@ -38,7 +38,7 @@ const page = ({ params }) => {
         className="pb-32"
         archive={true}
         params={params}
-        itemsPerPage={50}
+        itemsPerPage={3}
       />
       <Hero className="pt-32 md:pt-22 pb-22" />
     </>

@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 *::-moz-selection {
-  @apply text-white bg-green-600
+  @apply text-white bg-red-600
 }
 
 *::selection {
-  @apply text-white bg-green-600
+  @apply text-white bg-red-600
 }
 
 .pagination {

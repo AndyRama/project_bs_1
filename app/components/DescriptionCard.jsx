@@ -12,7 +12,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
       description: description || '',
     },
     content: {
-      img: '/images/plumbing-job.jpg',
+      img: '/images/banner.jpg',
       descriptions: [
         "Expresse Dépannage intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie et sanitaires. En cas de fuite d'eau ou de problème avec vos installations, notre équipe de professionnels qualifiés se déplace rapidement pour vous dépanner efficacement.",
         'Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.',
@@ -92,7 +92,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="md:flex w-[600px] h-[500px] object-sticky lg:max-w-2xl rounded-md"
+                  className="md:flex w-[500px] h-[450px] object-fit lg:max-w-2xl rounded-md"
                   alt="Plumber"
                   width={250}
                   height={300}

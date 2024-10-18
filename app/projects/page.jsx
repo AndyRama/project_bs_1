@@ -22,7 +22,7 @@ const page = () => {
         image={banner}
         description={`Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.`}
       />
-      <Projects className="pt-10 pb-32" itemsPerPage={12} />
+      <Projects className="pt-10 pb-32" itemsPerPage={3} />
       <Cta1 />
       <GridPricing />
       <Cta2 />
