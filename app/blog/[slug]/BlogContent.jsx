@@ -35,94 +35,96 @@ const BlogContent = ({ post }) => {
   }
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transistion: {
-          delay: 0.2,
-          duration: 0.5,
-        },
-      }}
-      viewport={{ once: true }}
-      className="pt-44 pb-20 px-4 md:px-8 lg:mx-auto"
-    >
-      <div>
-        <div className="text-center mb-16">
-          {/* Content title post */}
-          <h2 className="text-[#2F2E2E] text-balance lg:text-5xl/none font-medium">
-            {post.title}
-          </h2>
+    <>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transistion: {
+            delay: 0.2,
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+        className="pt-44 pb-20 px-4 md:px-8 lg:mx-auto"
+      >
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            {/* Content title post */}
+            <h2 className="text-[#2F2E2E] text-3xl lg:text-5xl font-bold">
+              {post.title}
+            </h2>
 
-          <p className="text-slate-500 mt-10 text-center">
-            <span className="inline-flex space-x-3">
-              <span>{format(parseISO(post.date), 'LLL d, yyyy')}</span>
-              <span>•</span>
-              <span>{post.author}</span>
-            </span>
+            <p className="text-slate-500 mt-10 text-center">
+              <span className="inline-flex space-x-3">
+                <span>{format(parseISO(post.date), 'LLL d, yyyy')}</span>
+                <span>•</span>
+                <span>{post.author}</span>
+              </span>
 
-            <span className="mx-3">•</span>
+              <span className="mx-3">•</span>
 
-            {post.categories?.map((category, index) => (
-              <Link
-                href={`/blog/categories/${slugify(category.title)}`}
-                key={category.title}
-                className="font-medium"
-              >
-                {category.title}
-                {index < post.categories.length - 1 ? ` | ` : ``}
-              </Link>
-            ))}
-          </p>
-        </div>
-
-        {/* Content Image post */}
-        <div className="mb-16">
-          <Image
-            src={post.image}
-            width={1065}
-            height={250}
-            className="object-fit object-top rounded-md border w-full h[250px] md:h-[644px] border-gray-200 mx-auto"
-            alt={post.title}
-          />
-        </div>
-
-        <article className="max-w-[800px] mx-auto text-base md:text-left prose ">
-          <MDXContent />
-        </article>
-
-        <Cta1 />
-        <div className="max-w-5xl mx-auto mt-20 lg:mt-32">
-          <h2 className="text-2xl text-gray-700 mb-10">
-            Plus d&apos;articles de mon blog
-          </h2>
-
-          {/* Card others posts */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {posts
-              .filter((a) => post.title !== a.title)
-              .map((item, index) => {
-                if (index > 2) return null
-                return <PostCard key={index} index={index} post={item} />
-              })}
+              {post.categories?.map((category, index) => (
+                <Link
+                  href={`/blog/categories/${slugify(category.title)}`}
+                  key={category.title}
+                  className="font-medium"
+                >
+                  {category.title}
+                  {index < post.categories.length - 1 ? ` | ` : ``}
+                </Link>
+              ))}
+            </p>
           </div>
 
-          {/* Btn others post */}
-          <div className="flex justify-center mt-10 pb-20">
-            <Link
-              href="/blog"
-              className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase
+          {/* Content Image post */}
+          <div className="mb-16">
+            <Image
+              src={post.image}
+              width={1065}
+              height={644}
+              className="object-cover object-top rounded-md"
+              alt={post.title}
+            />
+          </div>
+
+          <article className="prose mx-auto max-w-2xl">
+            <MDXContent />
+          </article>
+
+          {/* <Cta2 /> */}
+          <div className="max-w-5xl mx-auto mt-20 lg:mt-32">
+            <h2 className="text-2xl text-gray-700 mb-10">
+              Plus d&apos;articles de mon blog
+            </h2>
+
+            {/* Card others posts */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {posts
+                .filter((a) => post.title !== a.title)
+                .map((item, index) => {
+                  if (index > 2) return null
+                  return <PostCard key={index} index={index} post={item} />
+                })}
+            </div>
+
+            {/* Btn others post */}
+            <div className="flex justify-center mt-10 pb-20">
+              <Link
+                href="/blog"
+                className="transition-all duration-300 ease-in-out text-[11.5px] tracking-[2px] font-bold uppercase
                bg-gradient-to-tr from-[#e78738] to-[#fb923c] hover:transparent hover:border-white px-5
              text-white hover:shadown-2xl rounded-md"
-            >
-              Voir tous mes articles
-            </Link>
+              >
+                Voir tous mes articles
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <Cta2 />
-    </motion.div>
+      </motion.div>
+      <Cta1 />
+    </>
   )
 }
 

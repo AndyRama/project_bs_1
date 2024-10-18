@@ -2,7 +2,6 @@ import React from 'react'
 import SubHero from '../components/blog/SubHero'
 import Posts from '../components/blog/Posts'
 import TeamImage from './../../public/images/Express3.png'
-import AnimatedBanner from '../components/AnimatedBanner'
 import Hero from '../components/Hero'
 
 
@@ -13,7 +12,6 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <AnimatedBanner />
       <SubHero
         className="pt-32 lg:mb-22 xl:mb-32"
         subTitle="Mon blog"

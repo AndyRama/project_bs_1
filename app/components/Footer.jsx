@@ -70,7 +70,7 @@ const footerContent = {
       heading: 'Performance',
       links: [
         {
-          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fproject-bs-1.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
+          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fexpress-depannage-plomberie.vercel.app%2Fblog&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
           label: 'LighHouse',
           target: '_blank',
         },
@@ -95,7 +95,7 @@ const Copyright = () => {
         </Link>
         Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
-        <Link href="andyramaroson.com" className="text-red-500 ml-1">
+        <Link href="https:www.andyramaroson.com" className="text-red-500 ml-1" target="_Blank">
           Andy R.
         </Link>
       </div>
