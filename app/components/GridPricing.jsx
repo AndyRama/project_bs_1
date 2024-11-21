@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
+import { MdPlumbing } from 'react-icons/md'
 
 const program = {
   heading: {
@@ -100,7 +101,7 @@ const PriceTable = () => {
           {services.map((service, index) => (
             <tr key={index} className="border-b border-gray-200">
               <td className="py-3 px-4 text-black-600 flex items-center">
-                {service.title}
+              <MdPlumbing className="px-4" /><span>{service.title}</span>
               </td>
               <td className="py-3 px-4 text-gray-600">{service.price}</td>
             </tr>

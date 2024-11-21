@@ -8,29 +8,29 @@ function CTA2() {
         {/* Icône et description 1 */}
         <div className="flex flex-col items-center">
           <FaUsers className="text-5xl mb-4 border border-white rounded-full py-2" />
-          <h4 className="text-lg font-bold text-white">Expert Team</h4>
-          <p className="text-sm">Ensuring high-quality service and reliable solutions.</p>
+          <h4 className="text-lg font-bold text-white">Équipe d&apos;experts</h4>
+          <p className="text-sm">Assurant un service de haute qualité et des solutions fiables.</p>
         </div>
 
         {/* Icône et description 2 */}
         <div className="flex flex-col items-center">
           <FaClock className="text-5xl mb-4 " />
-          <h4 className="text-lg font-bold text-white">24/7 Emergency Services</h4>
-          <p className="text-sm">Urgent issues promptly and minimize disruption.</p>
+          <h4 className="text-lg font-bold text-white">Services d&apos;urgence 24h/24 et 7j/7</h4>
+          <p className="text-sm">Résolvez rapidement les problèmes urgents et minimisez les perturbations.</p>
         </div>
 
         {/* Icône et description 3 */}
         <div className="flex flex-col items-center">
           <FaDollarSign className="text-5xl mb-4 border border-white rounded-full py-2" />
-          <h4 className="text-lg font-bold text-white">Transparent Pricing</h4>
-          <p className="text-sm">We offer clear, upfront pricing with no hidden fees.</p>
+          <h4 className="text-lg font-bold text-white">Tarification transparente</h4>
+          <p className="text-sm">Nous proposons des tarifs clairs et précis, sans frais cachés.</p>
         </div>
 
         {/* Icône et description 4 */}
         <div className="flex flex-col items-center">
           <FaSmile className="text-5xl mb-4 border border-white rounded-full py-2" />
-          <h4 className="text-lg font-bold text-white">Customer Satisfaction</h4>
-          <p className="text-sm">Tailored solutions to meet your specific needs.</p>
+          <h4 className="text-lg font-bold text-white">Satisfaction client</h4>
+          <p className="text-sm">Des solutions sur mesure pour répondre à vos besoins spécifiques.</p>
         </div>
       </div>
     </div>

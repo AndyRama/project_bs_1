@@ -7,7 +7,7 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Express  | Portfolio',
+  title: 'Express Dépannage Plomberie',
   description: 'Allier pour votre création de site web booster avec I.A',
   icon: {
     icon: ['favicon.icon'],

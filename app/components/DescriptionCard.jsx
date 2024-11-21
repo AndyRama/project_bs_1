@@ -35,7 +35,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="container px-4 md:px-0  mx-auto">
+      <div className="px-4 mx-auto">
         <div className="text-start lg:max-w-xl relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span

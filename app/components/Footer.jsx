@@ -32,19 +32,16 @@ const footerContent = {
         {
           href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
           label: 'Bordeaux',
-          badge: 'New',
           target: '_blank',
         },
         {
           href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
           label: 'Mérignac',
-          badge: 'New',
           target: '_blank',
         },
         {
           href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
           label: 'Pessac',
-          badge: 'New',
           target: '_blank',
         },
       ],
@@ -55,13 +52,11 @@ const footerContent = {
         {
           href: '/document/terms/',
           label: 'Terms',
-          badge: 'New',
           target: '_blank',
         },
         {
           href: '/document/privacy',
           label: 'Privacy',
-          badge: 'New',
           target: '_blank',
         },
       ],
@@ -151,7 +146,7 @@ const Footer = ({ className }) => {
                             }
                             text-[#2F2E2E] duration-300 transition-all ease-in-out hover:text-red-500`}
                           >
-                            {link.label === 'Co²' ? (
+                            {link.label === 'Blog' ? (
                               <>
                                 <span>{link.label}</span>
                                 <span
