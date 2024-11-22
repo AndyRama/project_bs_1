@@ -84,7 +84,7 @@ const RecentBlog = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto rounded-md ">
+      <div className=" mx-auto rounded-md ">
         <div className="px-4 lg:flex mb-2">
           <div className="lg:w-10/12">
             {recentBlogContent.heading.subTitle && (
@@ -99,7 +99,7 @@ const RecentBlog = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-red500"
+                className="uppercase tracking-[3px] text-sm inline-block text-red-500"
               >
                 {recentBlogContent.heading.subTitle}
               </motion.span>
@@ -163,7 +163,7 @@ const RecentBlog = ({ className }) => {
             <Link
               href="/blog"
               className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-400 to-red-600 py-4 px-3
+          tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-400 to-red-600 py-4 px-4
           rounded hover:text-black text-white inline-block items-start hover:bg-white hover:shadow-2xl 
           hover:shadow-1xl h-12"
             >
