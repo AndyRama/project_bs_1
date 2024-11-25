@@ -46,7 +46,7 @@ const ProjectCard = ({ index, project }) => {
           {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
 
-        <h3 className="mb-4 text-orange-500">
+        <h3 className="mb-4 text-red-500">
           <Link href={project.url} className="text-lg leading-none">
             {project.title}
           </Link>
@@ -62,14 +62,14 @@ const ProjectCard = ({ index, project }) => {
             inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full
-            before:h-[2px] before:bg-orange-500 before:origin-[100%, 50%]
+            before:h-[2px] before:bg-red-500 before:origin-[100%, 50%]
             before:transistion-all before:duration-300 before:ease-in-out
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
             hover:before:scale-x-[1] hover:before:scale-y-[1]
             hover:before:scale-z-[1] pb-2"
           >
-            lire plus dl&apos;informations
+            Plus dl&apos;informations
           </Link>
         </div>
       </div>
@@ -83,9 +83,9 @@ const RecentProject = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className="container mx-auto rounded-md ">
-        <div className=" px-4 lg:flex justify-left mb-2">
-          <div className="lg:w-7/12">
+      <div className="mx-auto rounded-md ">
+        <div className="lg:flex mb-2">
+          <div className="px-4 lg:w-12/12">
             {recentProjectContent.heading.subTitle && (
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
@@ -98,7 +98,7 @@ const RecentProject = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-orange-400"
+                className="uppercase tracking-[3px] text-sm inline-block text-red-500"
               >
                 {recentProjectContent.heading.subTitle}
               </motion.span>
@@ -140,10 +140,9 @@ const RecentProject = ({ className }) => {
           </div>
         </div>
       </div>
-
       <div
-        className="px-4 md:px-8 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
-          gap-4 w-full lg:w-11/12 mx-auto mt-10 mb-10  "
+        className="px-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4
+          gap-4 w-full lg:w-12/12 mx-auto mt-10 mb-4  "
       >
         {projects.slice(0, 4).map((project, index) => (
           <ProjectCard key={index} index={index} project={project} />
@@ -163,11 +162,11 @@ const RecentProject = ({ className }) => {
           <Link
             href="/projects"
             className="transistion-all duration-300 ease-in-out text-[11.5px]
-          tracking-[2px] font-bold uppercase bg-gradient-to-tr from-[#e78738] to-[#fb923c]py-4 px-3
-          rounded text-white inline-block items-center hover:bg-white hover:text-orange-400
+          tracking-[2px] font-bold uppercase bg-gradient-to-r from-red-500 to-red-800 py-4 px-3
+          rounded text-white inline-block items-center hover:bg-white hover:text-black
           hover:shadow-1xl h-12"
           >
-            Voir tous les projects
+            Tous nos services
           </Link>
         </motion.div>
       </div>

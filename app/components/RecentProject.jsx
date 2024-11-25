@@ -111,7 +111,7 @@ const RecentProject = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="uppercase tracking-[3px] text-sm inline-block text-black"
+                className="uppercase tracking-[3px] text-sm inline-block text-red-500 "
               >
                 {recentProjectContent.heading.subTitle}
               </motion.span>
@@ -128,7 +128,7 @@ const RecentProject = ({ className }) => {
                   },
                 }}
                 viewport={{ once: true }}
-                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-red-500"
+                className="text-2xl lg:text-4xl mb-4 lg:mb-0 text-black "
               >
                 {recentProjectContent.heading.title}
               </motion.h2>

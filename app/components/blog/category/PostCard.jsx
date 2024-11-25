@@ -45,7 +45,7 @@ const PostCard = ({ post, index }) => {
         <h3 className="mb-4">
           <Link
             href={`/${post.url}`}
-            className="text-[#ff5e29] text-lg leading-none"
+            className="text-red-500 text-lg leading-none"
           >
             {post.title}
           </Link>
@@ -54,11 +54,11 @@ const PostCard = ({ post, index }) => {
         <div>
           <Link
             href={`/${post.url}`}
-            className={`text-gray-500 hover:text-white text-[12px] tracking-[2px] uppercase
+            className={`text-gray-500 tracking-[2px] uppercase
             pb-2 inline-block  duration-300 transistion-all bg-white-600
             ease-in-out relative before:content-['']
             before:absolute before:bottom-0 before:left-0 before:w-full
-            before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c] before:origin-[100%, 50%]
+            before:h-[2px] before:bg-gradient-to-r from-red-500 to-red-800 before:origin-[100%, 50%]
             before:transistion-all before:duration-300 before:ease-in-out
             before:scale-x-0 before:scale-y-[1] before:scale-z[1]
             before:wil-change-transform hover:before:origin-[100%, 0%]
