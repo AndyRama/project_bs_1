@@ -59,6 +59,11 @@ const Project = defineDocumentType(() => ({
       description: 'The title of the project',
       require: true,
     },
+    author: {
+      type: 'string',
+      description: 'the author image of the post ',
+      required: true,
+    },
     location: {
       type: 'string',
       description: 'The location of the project',

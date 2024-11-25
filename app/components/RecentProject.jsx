@@ -157,7 +157,7 @@ const RecentProject = ({ className }) => {
           className="px-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4
           gap-4 w-full mx-auto mt-10 mb-10"
         >
-          {projects.slice(0, 8).map((project, index) => (
+          {projects.slice(0, 4).map((project, index) => (
             <ProjectCard key={index} index={index} project={project} />
           ))}
         

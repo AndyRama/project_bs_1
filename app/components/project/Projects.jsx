@@ -13,8 +13,6 @@ const Items = ({ currentItems }) => {
       {currentItems &&
         currentItems.map((project, index) => {
           index *= 0.05
-          const production = `${project.herb}`
-          const repository = `${project.github}`
           return (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -45,13 +43,13 @@ const Items = ({ currentItems }) => {
 
                 <div className="px-4 mt-4">
                   <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[2px]">
-                    {format(parseISO(project.date), 'LLL d, yyyy')} •{' '}
-                    {project.realisation}
+                    {format(parseISO(project.date), 'LLL d, yyyy')} •
+                    {project.author} • {'service'}
                   </p>
                   <h3>
                     <Link
                       href={project.url}
-                      className="text-lg leading-none"
+                      className="text-lg leading-none text-red-500"
                     >
                       {project.title}
                     </Link>
@@ -65,10 +63,16 @@ const Items = ({ currentItems }) => {
               <div className="flex flex-row px-4 pb-6">
                 <Link
                   href={project.url}
-                  className={
-                    `text-[12px] tracking-[2px] uppercase mt-6 md:px-2 mr-2 border
-                   border-gray-200 px-4 pt-2 pb-2 rounded-md hover:text-bold hover:text-orange-900
-                   hover:border-orange-500`}
+                  className={` text-gray-500 hover:text-[#2F2E2E] text-[12px] tracking-[2px] uppercase
+                    pb-2 inline-block  duration-300 transistion-all bg-white-600
+                    ease-in-out relative before:content-[''] mt-6
+                    before:absolute before:bottom-0 before:left-0 before:w-full
+                    before:h-[2px] before:bg-gradient-to-r from-red-500 to-red-800 before:origin-[100%, 50%]
+                    before:transistion-all before:duration-300 before:ease-in-out
+                    before:scale-x-0 before:scale-y-[1] before:scale-z[1]
+                    before:wil-change-transform hover:before:origin-[100%, 0%]
+                    hover:before:scale-x-[1] hover:before:scale-y-[1]
+                    hover:before:scale-z-[1]`}
                 >
                   plus d&apos;infos
                 </Link>

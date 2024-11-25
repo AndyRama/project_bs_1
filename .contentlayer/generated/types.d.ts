@@ -51,6 +51,8 @@ export type Project = {
   type: 'Project'
   /** The title of the project */
   title?: string | undefined
+  /** the author image of the post  */
+  author: string
   /** The location of the project */
   location?: string | undefined
   /** The date of the project */

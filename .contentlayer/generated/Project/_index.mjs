@@ -3,6 +3,10 @@
 import projects__ballonEauChaudeMdx from './projects__Ballon-eau-chaude.mdx.json' assert { type: 'json' }
 import projects__debouchageDeCanalisationMdx from './projects__Debouchage-de-canalisation.mdx.json' assert { type: 'json' }
 import projects__installationDUnWcMdx from './projects__Installation-d-un-wc.mdx.json' assert { type: 'json' }
+import projects__rechercheDeFuiteNonDestructiveMdx from './projects__Recherche-de-fuite-non-destructive.mdx.json' assert { type: 'json' }
 import projects__reparationDUnTuyauMdx from './projects__Reparation-d-un-tuyau.mdx.json' assert { type: 'json' }
+import projects__reparationDUneFuiteDeDoucheMdx from './projects__Reparation-d-une-fuite-de-douche.mdx.json' assert { type: 'json' }
+import projects__reparationDUneFuiteSurChasseDEauMdx from './projects__Reparation-d-une-fuite-sur-chasse-d-eau.mdx.json' assert { type: 'json' }
+import projects__installationDUnRobinetMdx from './projects__installation-d-un-robinet.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__ballonEauChaudeMdx, projects__debouchageDeCanalisationMdx, projects__installationDUnWcMdx, projects__reparationDUnTuyauMdx]
+export const allProjects = [projects__ballonEauChaudeMdx, projects__debouchageDeCanalisationMdx, projects__installationDUnWcMdx, projects__rechercheDeFuiteNonDestructiveMdx, projects__reparationDUnTuyauMdx, projects__reparationDUneFuiteDeDoucheMdx, projects__reparationDUneFuiteSurChasseDEauMdx, projects__installationDUnRobinetMdx]

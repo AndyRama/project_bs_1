@@ -41,7 +41,7 @@ const Items = ({ currentItems }) => {
                     transition-all ease-in-out group-hover:scale-[1.05] rounded-t-md"
                 />
                 <div className="p-4">
-                  <p className="text-[#ff5e29] mb-2 uppercase text-[12px] tracking-[1px] font-bold">
+                  <p className="text-red-500 mb-2 uppercase text-[12px] tracking-[1px] font-bold">
                     {format(parseISO(post.date), 'LLL d, yyyy')} • {post.author}
                   </p>
                   <p className="mb-2">
@@ -70,7 +70,7 @@ const Items = ({ currentItems }) => {
                         pb-2 inline-block  duration-300 transistion-all bg-white-600
                         ease-in-out relative before:content-['']
                         before:absolute before:bottom-0 before:left-0 before:w-full
-                        before:h-[2px] before:bg-gradient-to-tr from-[#e78738] to-[#fb923c] before:origin-[100%, 50%]
+                        before:h-[2px] before:bg-gradient-to-r from-red-500 to-red-800 before:origin-[100%, 50%]
                         before:transistion-all before:duration-300 before:ease-in-out
                         before:scale-x-0 before:scale-y-[1] before:scale-z[1]
                         before:wil-change-transform hover:before:origin-[100%, 0%]
