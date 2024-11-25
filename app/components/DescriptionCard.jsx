@@ -76,9 +76,9 @@ const CardDescription = ({ className, title, subTitle, description }) => {
           )}
         </div>
 
-        <div className="lg:flex justify-center">
+        <div className="lg:flex justify-center ">
           <div className="w:10/12 lg:flex gap-20 items-center md:items-start">
-            <div className="mb-7 lg:mb-0 lg:w-12/12 lg:order-1 relative">
+            <div className="mb-7 lg:mb-0 lg:w-12/12 lg:order-1 relative mx-auto">
               <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{
@@ -94,7 +94,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
               >
                 <Image
                   src={cardDescriptionContent.content.img}
-                  className="md:flex w-[500px] h-[450px] object-fit lg:max-w-2xl rounded-md"
+                  className="md:flex w-[500px] h-[450px] lg:w-[650px] lg:h-[500px] object-fit lg:max-w-2xl rounded-md"
                   alt="Plumber"
                   width={250}
                   height={300}
