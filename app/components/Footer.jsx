@@ -27,26 +27,6 @@ const footerContent = {
       ],
     },
     {
-      heading: 'Ville',
-      links: [
-        {
-          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
-          label: 'Bordeaux',
-          target: '_blank',
-        },
-        {
-          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
-          label: 'Mérignac',
-          target: '_blank',
-        },
-        {
-          href: 'https://www.websitecarbon.com/website/project-bs-1-vercel-app/',
-          label: 'Pessac',
-          target: '_blank',
-        },
-      ],
-    },
-    {
       heading: 'Cvg',
       links: [
         {
