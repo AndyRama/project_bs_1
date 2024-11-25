@@ -19,7 +19,7 @@ const page = () => {
         image={TeamImage}
         description="Expresse Dépannage, votre solution d’urgence en plomberie, disponible 24h/24 et 7j/7. Que ce soit pour une fuite d’eau, un chauffe-eau défectueux ou une canalisation bouchée, nos experts interviennent rapidement pour vous offrir des solutions efficaces et durables."
       />
-      <Posts className="pt-10 pb-32" itemsPerPage={9} />
+      <Posts className="pt-10 pb-32" itemsPerPage={3} />
       <Hero className="pt-32 md:pt-22 pb-22" />
     </>
   )

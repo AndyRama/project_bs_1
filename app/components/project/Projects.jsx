@@ -42,19 +42,18 @@ const Items = ({ currentItems }) => {
                 />
 
                 <div className="px-4 mt-4">
-                  <p className="text-[#2F2E2E] mb-3 uppercase text-[12px] tracking-[2px]">
-                    {format(parseISO(project.date), 'LLL d, yyyy')} •
-                    {project.author} • {'service'}
+                  <p className="text-black mb-3 uppercase text-[12px] tracking-[2px]">
+                    {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}                 
                   </p>
                   <h3>
                     <Link
                       href={project.url}
-                      className="text-lg leading-none text-red-500"
+                      className="text-lg leading-none text-red-500 bold"
                     >
                       {project.title}
                     </Link>
                   </h3>
-                  <p className="text-[#2F2E2E] text-[12px] tracking-[2px]">
+                  <p className="text-black text-[12px] tracking-[2px] mt-4">
                     {project.description}
                   </p>
                 </div>

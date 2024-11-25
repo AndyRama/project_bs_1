@@ -42,8 +42,8 @@ const ProjectCard = ({ project, index }) => {
         <p className="text-gray-500 mb-3 uppercase text-[12px] tracking-[1px]">
           {format(parseISO(project.date), 'LLL d, yyyy')} • {project.author}
         </p>
-        <h3 className="mb-4">
-          <Link href={`/${project.url}`} className="text-lg leading-none">
+        <h3>
+          <Link href={`/${project.url}`} className="text-lg leading-none mb-4">
             {project.title}
           </Link>
         </h3>
