@@ -10,10 +10,10 @@ const CardPricingContent = {
     {
       title: 'Prestation',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia ipsum et repellat!',
+        'Vous pouvez retrouver tous nos tarifs sur la page Services',
       btn: {
-        href: 'https://calendly.com/andyramaroson/30min',
-        label: 'Discutons en !',
+        href: '/projects',
+        label: 'Plus d’information',
       },
     },
   ],

@@ -96,7 +96,7 @@ const RecentProject = ({ className }) => {
   )
   return (
     <section className={`${className}`}>
-      <div className="  mx-auto rounded-md ">
+      <div className=" container mx-auto rounded-md ">
         <div className="px-4 lg:flex mb-2">
           <div className="lg:w-10/12">
             {recentProjectContent.heading.subTitle && (

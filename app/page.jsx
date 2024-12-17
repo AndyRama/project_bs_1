@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+// import Hero2 from './components/Hero2'
 import RecentBlog from './components/RecentBlog'
 import FAQ from './components/FAQ'
 import Cta1 from './components/Cta1'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero className="pt-28 md:pt-32" />
+      {/* <Hero2 className="pt-28 md:pt-32" /> */}
       <DescriptionCard
         className="mt-28 pb-22"
         title="Dépannage Plomberie"

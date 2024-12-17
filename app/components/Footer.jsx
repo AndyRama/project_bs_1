@@ -20,9 +20,18 @@ const footerContent = {
           label: 'Blog',
           badge: 'New',
         },
+      ],
+    },
+    {
+      heading: 'Autres',
+      links: [
         {
           href: '/projects',
           label: 'Services',
+        },
+        {
+          href: '/contact',
+          label: 'Contact',
         },
       ],
     },

@@ -12,7 +12,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
       description: description || '',
     },
     content: {
-      img: '/images/banner.jpg',
+      img: '/images/image.jpg',
       descriptions: [
         "Expresse Dépannage intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie et sanitaires. En cas de fuite d'eau ou de problème avec vos installations, notre équipe de professionnels qualifiés se déplace rapidement pour vous dépanner efficacement.",
         "Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.",
@@ -37,7 +37,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
 
   return (
     <section className={`${className}`}>
-      <div className="px-4 mx-auto  ">
+      <div className="container px-4 mx-auto">
         <div className="text-start lg:max-w-xl relative z-[5]">
           {cardDescriptionContent.heading.subTitle && (
             <motion.span

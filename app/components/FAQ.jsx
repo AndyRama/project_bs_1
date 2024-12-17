@@ -1,15 +1,16 @@
-"use client";
+'use client'
 
-import { useState } from 'react';
+import Link from 'next/link'
+import { useState } from 'react'
 
 const FAQ = () => {
   // Utilisation du hook useState pour suivre l'index actif
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null)
 
   // Fonction pour basculer l'état de l'accordéon
   const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Ouvre ou ferme la question
-  };
+    setActiveIndex(activeIndex === index ? null : index) // Ouvre ou ferme la question
+  }
 
   // Liste des questions et réponses de la FAQ
   const faqs = [
@@ -58,7 +59,7 @@ const FAQ = () => {
       answer:
         'Nos délais sont en général de 30 à 60 minutes, selon votre localisation en Gironde. Nous faisons tout notre possible pour être sur place au plus vite.',
     },
-  ];
+  ]
 
   return (
     <div className="container mx-auto w-full md:w-10/12 mt-20 pb-20 px-4 ">
@@ -67,9 +68,18 @@ const FAQ = () => {
         <div className="md:col-span-1">
           <h2 className="text-3xl font-bold mb-4">FAQs</h2>
           <p className="mb-4">
-            Retrouvez ici les réponses à vos questions sur nos services de plomberie d’urgence 24h/24 et 7j/7.
+            Retrouvez ici les réponses à vos questions sur nos services de
+            plomberie.
           </p>
-          <button className="bg-black text-white px-4 py-2 rounded">Contact</button>
+          <Link
+            href="/contact"
+            alt="page contact"
+            className="bg-black text-white px-4 py-2 rounded"
+          >
+            {' '}
+            Contact
+          </Link>
+          {/* <button  href="/Contact">Contact</button> */}
         </div>
 
         {/* Section droite : questions et réponses */}
@@ -80,7 +90,9 @@ const FAQ = () => {
                 className="flex justify-between items-center cursor-pointer py-4"
                 onClick={() => toggleAccordion(index)}
               >
-                <h3 className="text-md md:text-lg font-semibold">{faq.question}</h3>
+                <h3 className="text-md md:text-lg font-semibold">
+                  {faq.question}
+                </h3>
                 <span>{activeIndex === index ? '-' : '+'}</span>
               </div>
               {activeIndex === index && (
@@ -91,7 +103,7 @@ const FAQ = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default FAQ;
+export default FAQ

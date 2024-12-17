@@ -42,14 +42,14 @@ const CardMap = ({ className }) => {
           >
             <div className="px-2 lg:px-4 mt-5 mb-10 relative flex flex-col gap-3 items-start ">
               <span className="text-2xl flex">
-                <MdHome className="mt-2 mr-2 border-orange-500 rounded-sm text-[#ff5e29] bg-orange-500 bg-opacity-10" />
+                <MdHome className="mt-2 mr-2 border-red-500 rounded-sm text-red-500 bg-red-500 bg-opacity-10" />
                 <h2 className="text-3xl text-[#2F2E2E]">Localisation</h2>
               </span>
 
               <iframe
                 className="px-2 w-full h-[350px]"
                 src={
-                  "https://www.google.com/maps/embed/v1/place?key=AIzaSyBwOWZ_C1sw6lYJhxYk_LJJCI2uM9GW8IA&q=220 avenue de l'argonne,merignac,bordeaux,france "
+                  "https://www.google.com/maps/embed/v1/place?key=AIzaSyBwOWZ_C1sw6lYJhxYk_LJJCI2uM9GW8IA&q=217 avenue de la marne,merignac,bordeaux,france "
                 }
                 allowFullScreen
               ></iframe>
