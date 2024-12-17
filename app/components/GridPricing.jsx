@@ -56,7 +56,7 @@ const services = [
 
 const PriceTable = () => {
   return (
-    <section className="max-w-4xl mx-auto mt-20 pb-20">
+    <section className="max-w-6xl mx-auto mt-20 pb-20">
       <div className="container px-4 mx-auto w-12/12 mb-10">
         <motion.span
           initial={{ opacity: 0, y: 20 }}

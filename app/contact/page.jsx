@@ -3,7 +3,7 @@ import Hero from '../components/Hero'
 import CardContact from '../components/contact/CardContact'
 
 export const metadata = {
-  title: 'Contact Andy Ramaroson',
+  title: 'Contact | Express dépannage',
 }
 const page = () => {
   return (
