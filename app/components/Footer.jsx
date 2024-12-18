@@ -54,7 +54,7 @@ const footerContent = {
       heading: 'Performance',
       links: [
         {
-          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fexpress-depannage-plomberie.vercel.app%2Fblog&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
+          href: 'https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fexpress-depannage-plomberie.vercel.app%2F&strategy=desktop&category=performance&category=accessibility&category=best-practices&category=seo&utm_source=lh-chrome-ext#',
           label: 'LighHouse',
           target: '_blank',
         },
