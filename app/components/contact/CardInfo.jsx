@@ -67,7 +67,6 @@ const CardInfo = ({ className }) => {
                   width={150}
                   height={150}
                   alt="logo"
-                  className="rounded-full "
                 />
               </div>
               <span className="text-2xl flex">
