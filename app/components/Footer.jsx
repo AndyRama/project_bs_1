@@ -105,7 +105,7 @@ const Footer = ({ className }) => {
               </Link>
 
               <p className=" text-start text-black">
-                217 avenue rue de la <br className="hidden md:contents" /> marne
+                27 avenue rue de la <br className="hidden md:contents" /> marne
                 33700 Mérignac
               </p>
               <p className="text-start text-black">

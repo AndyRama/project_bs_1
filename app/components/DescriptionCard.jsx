@@ -22,7 +22,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     },
   }
 
-  const [visibleCount, setVisibleCount] = useState(2) // Par défaut, on affiche 2 paragraphe
+  const [visibleCount, setVisibleCount] = useState(3) // Par défaut, on affiche 2 paragraphe
   const [isExpanded, setIsExpanded] = useState(false)
 
   const loadMore = () => {
@@ -124,7 +124,7 @@ const CardDescription = ({ className, title, subTitle, description }) => {
                   </motion.p>
                 ))}
 
-              <div className="justify-center mt-6">
+              <div className="justify-center mt-6 hidden">
                 {!isExpanded &&
                   visibleCount <
                     cardDescriptionContent.content.descriptions.length && (
