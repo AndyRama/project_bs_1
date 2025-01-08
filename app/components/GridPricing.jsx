@@ -57,6 +57,7 @@ const services = [
 const PriceTable = () => {
   return (
     <section className="max-w-6xl mx-auto mt-20 pb-20">
+      {/* Section header */}
       <div className="container px-4 mx-auto w-12/12 mb-10">
         <motion.span
           initial={{ opacity: 0, y: 20 }}
@@ -90,7 +91,8 @@ const PriceTable = () => {
         </motion.h2>
       </div>
 
-      <table className="w-full text-left order-collapse">
+      {/* Table */}
+      <table className="w-full text-left border-collapse">
         <thead>
           <tr className="border-b-2 border-gray-200">
             <th className="py-2 px-4 font-semibold text-gray-700">Nos services</th>
@@ -99,12 +101,26 @@ const PriceTable = () => {
         </thead>
         <tbody>
           {services.map((service, index) => (
-            <tr key={index} className="border-b border-gray-200">
+            <motion.tr
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  delay: index * 0.1,
+                  duration: 0.4,
+                },
+              }}
+              viewport={{ once: true }}
+              className="border-b border-gray-200"
+            >
               <td className="py-3 px-4 text-black-600 flex items-center">
-              <MdPlumbing className='mr-2'/><span>{service.title}</span>
+                <MdPlumbing className="mr-2 text-red-500" />
+                <span>{service.title}</span>
               </td>
               <td className="py-3 px-4 text-gray-600">{service.price}</td>
-            </tr>
+            </motion.tr>
           ))}
         </tbody>
       </table>

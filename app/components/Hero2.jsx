@@ -1,11 +1,18 @@
-import Image from "next/image";
-import React from "react";
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Hero2 = () => {
   return (
     <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-32 md:pt-52">
       {/* Texte à gauche */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
+        viewport={{ once: true }}
+      >
         <h3 className="text-gray-600 text-sm mb-2 flex items-center">
           <svg
             className="w-5 h-5 mr-2"
@@ -18,28 +25,44 @@ const Hero2 = () => {
           À propos de nous
         </h3>
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Réalisations effectuer en matière d&apos;excellence de plomberie depuis 2006
+          Réalisations effectuer en matière d&apos;excellence de plomberie depuis 2016
         </h2>
         <p className="text-gray-600 mb-6">
-          Notre entreprise a commencé avec la vision de révolutionner
-          l&apos;industrie de la plomberie en France. Ce qui a commencé comme une
-          petite entreprise familiale est devenue un nom de confiance connu pour
-          sa fiabilité et son savoir-faire de qualité.
+          Chez Expresse Dépannage, notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d'eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
         </p>
         <ul className="list-none text-gray-600 space-y-2 mb-6">
-          <li className="flex items-center">
-            <span className="mr-2">✔️</span> Flexible et rentable
-          </li>
-          <li className="flex items-center">
-            <span className="mr-2">✔️</span> Programmes Pass Annuels
-          </li>
-          <li className="flex items-center">
-            <span className="mr-2">✔️</span> Employés formés
-          </li>
-          <li className="flex items-center">
-            <span className="mr-2">✔️</span> Solutions de qualité et
-            satisfaction
-          </li>
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.2 } }}
+            viewport={{ once: true }}
+            className="flex items-center"
+          >
+            <span className="mr-2">✔️</span> <strong>Service 24h/24 et 7j/7</strong>: Toujours disponibles pour répondre à vos urgences.
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.4 } }}
+            viewport={{ once: true }}
+            className="flex items-center"
+          >
+            <span className="mr-2">✔️</span> <strong>Interventions rapides et efficaces</strong>: Des techniciens qualifiés à votre service.
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.6 } }}
+            viewport={{ once: true }}
+            className="flex items-center"
+          >
+            <span className="mr-2">✔️</span> <strong>Transparence et tarifs compétitifs</strong>: Aucune mauvaise surprise, des prix clairs.
+          </motion.li>
+          <motion.li
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.8 } }}
+            viewport={{ once: true }}
+            className="flex items-center"
+          >
+            <span className="mr-2">✔️</span> <strong>Fiabilité et solutions durables</strong>: Votre satisfaction, notre priorité.
+          </motion.li>
         </ul>
         <a
           href="#"
@@ -47,10 +70,15 @@ const Hero2 = () => {
         >
           À propos de nous →
         </a>
-      </div>
+      </motion.div>
 
       {/* Images à droite */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
+        viewport={{ once: true }}
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+      >
         <Image
           className="rounded-lg shadow-lg"
           src="/images/plumber7.jpg"
@@ -65,38 +93,7 @@ const Hero2 = () => {
           width={320}
           height={530}
         />
-        <div className="col-span-2 flex items-center space-x-4 mt-4">
-          <div className="flex items-center space-x-2">
-            <Image
-              className="w-10 h-10 rounded-full"
-              src="/images/user1.jpg"
-              alt="Client 1"
-              width={40}
-              height={40}
-            />
-            <Image
-              className="w-10 h-10 rounded-full"
-              src="/images/user6.jpg"
-              alt="Client 2"
-               width={40}
-              height={40}
-            />
-            <Image
-              className="w-10 h-10 rounded-full"
-              src="/images/user5.jpg"
-              alt="Client 3"
-               width={40}
-              height={40}
-            />
-          </div>
-          <div>
-            <p className="text-gray-600">
-              Nos clients se déclarent satisfaits de nos précieux services.
-            </p>
-            <p className="text-lg font-semibold text-gray-800">4.7 / 5 ⭐</p>
-          </div>
-        </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

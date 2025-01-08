@@ -2,17 +2,15 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const FAQ = () => {
-  // Utilisation du hook useState pour suivre l'index actif
   const [activeIndex, setActiveIndex] = useState(null)
 
-  // Fonction pour basculer l'état de l'accordéon
   const toggleAccordion = (index) => {
-    setActiveIndex(activeIndex === index ? null : index) // Ouvre ou ferme la question
+    setActiveIndex(activeIndex === index ? null : index)
   }
 
-  // Liste des questions et réponses de la FAQ
   const faqs = [
     {
       question: 'Quels sont vos tarifs ?',
@@ -66,39 +64,103 @@ const FAQ = () => {
       <div className="grid md:grid-cols-3 gap-6">
         {/* Section gauche : titre et bouton de contact */}
         <div className="md:col-span-1">
-          <h2 className="text-3xl font-bold mb-4">FAQs</h2>
-          <p className="mb-4">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.05, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold mb-4"
+          >
+            FAQs
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.1, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
+            className="mb-4"
+          >
             Retrouvez ici les réponses à vos questions sur nos services de
             plomberie.
-          </p>
-          <Link
+          </motion.p>
+          <motion.Link
             href="/contact"
             alt="page contact"
             className="bg-black text-white px-4 py-2 rounded"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: { delay: 0.15, duration: 0.5 },
+            }}
+            viewport={{ once: true }}
           >
             {' '}
             Contact
-          </Link>
-          {/* <button  href="/Contact">Contact</button> */}
+          </motion.Link>
         </div>
 
         {/* Section droite : questions et réponses */}
         <div className="md:col-span-2">
           {faqs.map((faq, index) => (
-            <div key={index} className="mb-4 border-b">
+            <motion.div
+              key={index}
+              className="mb-4 border-b"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: index * 0.1, duration: 0.4 },
+              }}
+              viewport={{ once: true }}
+            >
               <div
                 className="flex justify-between items-center cursor-pointer py-4"
                 onClick={() => toggleAccordion(index)}
               >
-                <h3 className="text-md md:text-lg font-semibold">
+                <motion.h3
+                  className="text-md md:text-lg font-semibold"
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{
+                    opacity: 1,
+                    x: 0,
+                    transition: { delay: 0.1, duration: 0.4 },
+                  }}
+                  viewport={{ once: true }}
+                >
                   {faq.question}
-                </h3>
-                <span>{activeIndex === index ? '-' : '+'}</span>
+                </motion.h3>
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                    transition: { delay: 0.2, duration: 0.3 },
+                  }}
+                  viewport={{ once: true }}
+                >
+                  {activeIndex === index ? '-' : '+'}
+                </motion.span>
               </div>
               {activeIndex === index && (
-                <div className="text-gray-600 pb-4">{faq.answer}</div>
+                <motion.div
+                  className="text-gray-600 pb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: { delay: 0.2, duration: 0.4 },
+                  }}
+                >
+                  {faq.answer}
+                </motion.div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
