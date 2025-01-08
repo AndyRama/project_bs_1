@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero2 = () => {
   return (
-    <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-32 md:pt-52">
       {/* Texte à gauche */}
       <div>
         <h3 className="text-gray-600 text-sm mb-2 flex items-center">
@@ -53,14 +53,14 @@ const Hero2 = () => {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Image
           className="rounded-lg shadow-lg"
-          src="/public/images/plumber7.jpg"
+          src="/images/plumber7.jpg"
           alt="Image 1"
           width={280}
           height={370}
         />
         <Image
           className="rounded-lg shadow-lg"
-          src="/public/images/plumber9.jpg"
+          src="/images/plumbing-job.jpg"
           alt="Image 2"
           width={320}
           height={530}
@@ -69,21 +69,21 @@ const Hero2 = () => {
           <div className="flex items-center space-x-2">
             <Image
               className="w-10 h-10 rounded-full"
-              src="/public/images/fara.png"
+              src="/images/user1.jpg"
               alt="Client 1"
               width={40}
               height={40}
             />
             <Image
               className="w-10 h-10 rounded-full"
-              src="/public/images/user6.jpg"
+              src="/images/user6.jpg"
               alt="Client 2"
                width={40}
               height={40}
             />
             <Image
               className="w-10 h-10 rounded-full"
-              src="/public/images/user5.jpg"
+              src="/images/user5.jpg"
               alt="Client 3"
                width={40}
               height={40}
