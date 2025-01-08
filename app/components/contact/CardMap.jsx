@@ -49,7 +49,7 @@ const CardMap = ({ className }) => {
               <iframe
                 className="px-2 w-full h-[350px]"
                 src={
-                  "https://www.google.com/maps/embed/v1/place?key=AIzaSyBwOWZ_C1sw6lYJhxYk_LJJCI2uM9GW8IA&q=217 avenue de la marne,merignac,bordeaux,france "
+                  "https://www.google.com/maps/embed/v1/place?key=AIzaSyBwOWZ_C1sw6lYJhxYk_LJJCI2uM9GW8IA&q=27 avenue de la marne,merignac,bordeaux,france "
                 }
                 allowFullScreen
               ></iframe>

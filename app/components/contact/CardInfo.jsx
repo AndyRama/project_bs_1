@@ -30,7 +30,7 @@ const CardInfoContent = {
   },
   step: [
     {
-      title1: '217 avenue de la marne 33700 Mérignac',
+      title1: '27 avenue de la marne 33700 Mérignac',
       icon1: 'icon1',
       title2: '+05.56.34.89.79',
       icon2: 'icon2',

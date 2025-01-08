@@ -10,7 +10,7 @@ const CardPricingContent = {
     {
       title: 'Prestation',
       description:
-        'Vous pouvez retrouver tous nos tarifs sur la page Services',
+        'Vous pouvez retrouver tous nos tarifs sur notre page Services',
       btn: {
         href: '/projects',
         label: 'Plus d’information',
