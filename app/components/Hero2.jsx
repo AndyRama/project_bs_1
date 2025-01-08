@@ -25,10 +25,10 @@ const Hero2 = () => {
           À propos de nous
         </h3>
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Réalisations effectuer en matière maintenance en plomberie depuis 2016
+          Réalisations effectuer en matière d&apos;excellence de plomberie depuis 2016
         </h2>
         <p className="text-gray-600 mb-6">
-          Chez Expresse Dépannage, notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d'eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
+          Chez Expresse Dépannage, notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d&apos;eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
         </p>
         <ul className="list-none text-gray-600 space-y-2 mb-6">
           <motion.li
