@@ -60,7 +60,7 @@ const CardInfo = ({ className }) => {
             whileHover={{ y: -10, transition: 0.1 }}
             className="p-4 group duration-300 bg-white border border-[#2F2E2E] relative overflow-hidden hover:shadow-2xl rounded-md h-[460px]"
           >
-            <div className="px-2 lg:px-4 mt-1 relative flex flex-col gap-3 items-start">
+            <div className="mx-auto px-2 lg:px-0 mt-1 relative flex flex-col gap-3 items-start">
               <div className="flex items-center px-16">
                 <Image
                   src="/images/express-depannage.jpg"
@@ -83,7 +83,7 @@ const CardInfo = ({ className }) => {
                     {iconMapping[step[`icon${idx + 1}`]]}
                   </span>
                   <h3
-                    className="text-xl hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
+                    className="text-lg hover:text-gray-500 text-[#2F2E2E] pb-2 inline-block duration-300 transition-all bg-white-600 ease-in-out 
                       relative before:content-[''] before:absolute before:bottom-0 before:left-0 before:w-full before:h-[2px]
                       before:bg-red-500 before:origin-[100%, 50%] before:transition-all before:duration-300 before:ease-in-out before:scale-x-0
                       before:scale-y-[1] before:scale-z-[1] before:will-change-transform hover:before:origin-[100%, 0%] hover:before:scale-x-[1] 
