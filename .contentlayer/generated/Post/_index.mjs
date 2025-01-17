@@ -3,6 +3,6 @@
 import blog__fuiteDEauEnPleineNuitMdx from './blog__Fuite-d-eau-en-pleine-nuit.mdx.json' assert { type: 'json' }
 import blog__lesSolutionsPourDeboucherVosCanalisationsMdx from './blog__Les-solutions-pour-deboucher-vos-canalisations.mdx.json' assert { type: 'json' }
 import blog__panneDeChauffeEauMdx from './blog__Panne-de-chauffe-eau.mdx.json' assert { type: 'json' }
-import blog__pourquoiFaireAppelExpresseDPannage_24h_24Mdx from './blog__Pourquoi-faire-appel-à-Expresse-Dépannage-24h-24.mdx.json' assert { type: 'json' }
+import blog__pourquoiFaireAppelAExpresseDepannage_24h_24Mdx from './blog__Pourquoi-faire-appel-a-Expresse-Depannage-24h-24.mdx.json' assert { type: 'json' }
 
-export const allPosts = [blog__fuiteDEauEnPleineNuitMdx, blog__lesSolutionsPourDeboucherVosCanalisationsMdx, blog__panneDeChauffeEauMdx, blog__pourquoiFaireAppelExpresseDPannage_24h_24Mdx]
+export const allPosts = [blog__fuiteDEauEnPleineNuitMdx, blog__lesSolutionsPourDeboucherVosCanalisationsMdx, blog__panneDeChauffeEauMdx, blog__pourquoiFaireAppelAExpresseDepannage_24h_24Mdx]

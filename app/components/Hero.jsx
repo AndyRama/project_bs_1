@@ -20,8 +20,8 @@ const statContent = {
 
 const heroContent = {
   intro: {
-    title: 'Depannage',
-    subTitle: 'Express Plomberie',
+    title: 'Express',
+    subTitle: 'Dépannage Plomberie',
     description:
       'Une urgence plomberie ? Pas de panique ! Expresse Dépannage est à votre service 24h/7 pour des interventions rapides et professionnelles partout en Gironde.',
     btn: {

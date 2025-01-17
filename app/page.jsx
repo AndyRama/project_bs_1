@@ -14,8 +14,8 @@ export default function Home() {
       <Hero2 className="mt-20 pt-28 md:pt-32" />
       <DescriptionCard
         className="mt-28 pb-22"
-        title="Dépannage Plomberie"
-        subTitle="Express"
+        title="Express Plomberie"
+        subTitle="Dépannage"
       />
       <RecentProject className="pt-14 pb-15 " />
       <Cta1/>

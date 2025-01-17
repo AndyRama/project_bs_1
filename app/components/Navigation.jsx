@@ -82,7 +82,7 @@ export default function Navigation() {
                 />
               </span>
               Express
-              <span className='hidden xl:contents text-red-500'> Dépannage</span>
+              <span className='contents text-red-500'> Plomberie</span>
             </Link>
           </div>
 
