@@ -30,7 +30,7 @@ const Hero2 = () => {
         <p className="text-gray-600 mb-6">
           Chez Expresse Dépannage, notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d&apos;eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
         </p>
-        <ul className="hidden lg:content list-none text-gray-600 space-y-2 mb-6">
+        <ul className="hidden lg:contents list-none text-gray-600 space-y-2 mb-6">
           <motion.li
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.2 } }}
