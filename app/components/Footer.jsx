@@ -35,21 +35,21 @@ const footerContent = {
         },
       ],
     },
-    {
-      heading: 'Cvg',
-      links: [
-        {
-          href: '/document/terms/',
-          label: 'Terms',
-          target: '_blank',
-        },
-        {
-          href: '/document/privacy',
-          label: 'Privacy',
-          target: '_blank',
-        },
-      ],
-    },
+    // {
+    //   heading: 'Cvg',
+    //   links: [
+    //     {
+    //       href: '/document/terms/',
+    //       label: 'Terms',
+    //       target: '_blank',
+    //     },
+    //     {
+    //       href: '/document/privacy',
+    //       label: 'Privacy',
+    //       target: '_blank',
+    //     },
+    //   ],
+    // },
     {
       heading: 'Performance',
       links: [
@@ -139,7 +139,7 @@ const Footer = ({ className }) => {
                               <>
                                 <span>{link.label}</span>
                                 <span
-                                  className="py-0.5 px-1 rounded-full bg-orange-100
+                                  className="py-0.5 px-1 rounded-full bg-red-100
                                     border border-red-500 text-[10px] text-red-500
                                     invisible sm:visible"
                                 >

@@ -13,8 +13,8 @@ import { HiMenu } from 'react-icons/hi';
 
 const navigationMenu = [
   { href: '/', label: 'Accueil' },
+  { href: '/blog', label: 'Actualité' },
   { href: '/projects', label: 'Services' },
-  { href: '/blog', label: 'Blog' },
 ];
 export default function Navigation() {
   const [open, setOpen] = useState(false);
