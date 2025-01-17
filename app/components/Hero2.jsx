@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Hero2 = () => {
   return (
@@ -30,7 +31,7 @@ const Hero2 = () => {
         <p className="text-gray-600 mb-6">
           Chez Expresse Dépannage, notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d&apos;eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
         </p>
-        <ul className="hidden lg:contents list-none text-gray-600 space-y-2 mb-6">
+        <ul className="hidden lg:contents list-none text-gray-600 space-y-4 mb-6">
           <motion.li
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.4, delay: 0.2 } }}
@@ -64,12 +65,12 @@ const Hero2 = () => {
             <span className="mr-2">✔️</span> <strong>Fiabilité et solutions durables</strong>: Votre satisfaction, notre priorité.
           </motion.li>
         </ul>
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className="inline-block bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-500 transition"
         >
           À propos de nous →
-        </a>
+        </Link>
       </motion.div>
 
       {/* Images à droite */}
