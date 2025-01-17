@@ -14,9 +14,9 @@ const CardDescription = ({ className, title, subTitle, description }) => {
     content: {
       img: '/images/image1.jpg',
       descriptions: [
-        "Expresse Dépannage intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie et sanitaires. En cas de fuite d'eau ou de problème avec vos installations, notre équipe de professionnels qualifiés se déplace rapidement pour vous dépanner efficacement.",
-        "Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.",
-        "Avec notre expertise et notre réactivité, nous garantissons des solutions fiables pour protéger vos installations et vous offrir une tranquillité d’esprit. Faites confiance à Expresse Dépannage, le choix numéro un pour vos besoins urgents en plomberie.",
+        "Expresse Plomberie intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie et sanitaires. En cas de fuite d'eau ou de problème avec vos installations, notre équipe de professionnels qualifiés se déplace rapidement pour vous dépanner efficacement.",
+        "Avec Expresse Plomberie, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.",
+        "Avec notre expertise et notre réactivité, nous garantissons des solutions fiables pour protéger vos installations et vous offrir une tranquillité d’esprit. Faites confiance à Express Plomberie, le choix numéro un pour vos besoins urgents en plomberie.",
 
       ],
     },

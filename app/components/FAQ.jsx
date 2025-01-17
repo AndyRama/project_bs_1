@@ -86,7 +86,7 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="mb-4"
           >
-            Retrouvez ici les réponses à  toutes vos questions sur nos servicesen plomberie.
+            Retrouvez ici les réponses à  toutes vos questions sur nos services en plomberie.
           </motion.p>
           <motion.div>
             <Link

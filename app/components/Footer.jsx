@@ -75,7 +75,7 @@ const Copyright = () => {
       <div className="text-center items-center mx-auto text-sm">
         &copy; 2024
         <Link href="/" className="text-red-500 ml-1 mr-1">
-          Express Dépannage Plomberie
+          Express Plomberie
         </Link>
         Crée avec <BiSolidHeart className="text-red-400 inline-block mr-1" />
         par
@@ -100,7 +100,7 @@ const Footer = ({ className }) => {
                   <Image src={IconLogo} weight={60} height={60} alt="logo" />
                 </span>
                 <span className="text-red-500">
-                  Express <br /> Dépannage Plomberie
+                  Express Plomberie
                 </span>
               </Link>
 

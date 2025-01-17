@@ -7,7 +7,7 @@ const CTA1 = () => {
         {/* Partie gauche avec le texte et les numéros */}
         <div>
           <h3 className="text-2xl md:text-2xl lg:text-3xl font-bold mb-4 text-white">
-            Expresse Dépannage intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie au
+            Expresse Plomberie intervient 24h/24 et 7j/7 pour tous vos besoins en plomberie au
             <span className="text-red-500"> 05 56 34 89 79</span>
           </h3>
           <p className="text-lg bg-red-500 inline-block px-4 py-4 rounded-md font-bold">
