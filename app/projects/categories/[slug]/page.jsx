@@ -2,6 +2,8 @@ import React from 'react'
 import { allProjects } from 'contentlayer/generated'
 import SubHero from '@/app/components/project/SubHero'
 import Projects from '@/app/components/project/category/Projects'
+import Express from './../../../../public/images/Express3.png'
+
 
 const page = ({ params }) => {
   const newTitle = params?.slug.replace('-', ' ')
@@ -32,6 +34,7 @@ const page = ({ params }) => {
         title={`${newTitle} [${itemsTotal}]`}
         subTitle="Categories"
         description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nrojectrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        image={Express}
       />
       <Projects
         className="pb-32"

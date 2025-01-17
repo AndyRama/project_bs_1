@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import GridPricing from '../components/GridPricing'
 import Projects from '../components/project/Projects'
 import FAQ from '../components/FAQ'
-import banner from './../../public/images/Express3.png'
+import Express from './../../public/images/Express3.png'
 
 export const metadata = {
   title: 'Réalisation - Express Dépannage Plomberie',
@@ -19,7 +19,7 @@ const page = () => {
         className="pt-32 lg:mb-22 xl:mb-32"
         subTitle="Interventions"
         title=" Courantes"
-        image={banner}
+        image={Express}
         description={`Avec Expresse Dépannage, vous n’êtes jamais seul face à une urgence plomberie. Disponible jour et nuit, nos techniciens qualifiés se mobilisent pour intervenir rapidement et efficacement sur toutes vos installations, du débouchage à la réparation de fuites.`}
       />
       <Projects className="pt-10 pb-32" itemsPerPage={9} />

@@ -2,8 +2,7 @@ import React from 'react'
 import { allPosts } from 'contentlayer/generated'
 import SubHero from '@/app/components/blog/SubHero'
 import Posts from '@/app/components/blog/category/Posts'
-
-import TeamImage from './../../../../public/images/Express3.png'
+import Express from './../../../../public/images/Express3.png'
 import Hero from '@/app/components/Hero'
 
 const page = ({ params }) => {
@@ -32,7 +31,7 @@ const page = ({ params }) => {
         title={`${newTitle} [${itemsTotal}]`}
         subTitle="Categories"
         description="lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        image={TeamImage}
+        image={Express}
       />
       <Posts
         className="pb-32"
