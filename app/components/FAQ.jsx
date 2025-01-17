@@ -86,24 +86,25 @@ const FAQ = () => {
             viewport={{ once: true }}
             className="mb-4"
           >
-            Retrouvez ici les réponses à vos questions sur nos services de
-            plomberie.
+            Retrouvez ici les réponses à  toutes vos questions sur nos servicesen plomberie.
           </motion.p>
-          <motion.Link
-            href="/contact"
-            alt="page contact"
-            className="bg-black text-white px-4 py-2 rounded"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: { delay: 0.15, duration: 0.5 },
-            }}
-            viewport={{ once: true }}
-          >
-            {' '}
-            Contact
-          </motion.Link>
+          <motion.div>
+            <Link
+              href="/contact"
+              alt="page contact"
+              className="bg-black text-white px-4 py-2 rounded"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: { delay: 0.15, duration: 0.5 },
+              }}
+              viewport={{ once: true }}
+            >
+              {' '}
+              Contact
+            </Link>
+          </motion.div>
         </div>
 
         {/* Section droite : questions et réponses */}
