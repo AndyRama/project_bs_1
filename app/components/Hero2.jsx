@@ -46,10 +46,6 @@ const ReviewSmall = () => {
         ))}
       </div>
 
-      <p className="text-md mt-3">
-        Nos clients déclarent <br /> satisfaits  de nos <br /> précieux services
-      </p>
-
       {/* Review Details */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
