@@ -45,6 +45,7 @@ const ReviewSmall = () => {
           </motion.div>
         ))}
       </div>
+      <br/>
 
       {/* Review Details */}
       <motion.div
@@ -168,6 +169,9 @@ const Hero2 = () => {
             width={280}
             height={370}
           />
+          <h3 className="text-gray-600 text-sm mb-2 flex items-center">
+            Contactez-nous maintenant
+          </h3>
           <ReviewSmall />
         </div>
 
