@@ -16,7 +16,7 @@ const ReviewSmall = () => {
         },
       }}
       viewport={{ once: true }}
-      className="flex items-center text-white space-x-4 rounded-lg mt-8"
+      className="flex items-center text-black space-x-4 rounded-lg mt-8"
     >
       {/* Avatar Section */}
       <div className="flex -space-x-2">
@@ -160,6 +160,8 @@ const Hero2 = () => {
           width={280}
           height={370}
         />
+        {/* Review Section */}
+        <ReviewSmall />
 
         {/* Image 2 */}
         <Image
@@ -171,8 +173,6 @@ const Hero2 = () => {
         />
       </motion.div>
 
-      {/* Review Section */}
-      <ReviewSmall />
     </div>
   );
 };
