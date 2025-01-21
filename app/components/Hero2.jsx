@@ -23,9 +23,9 @@ const Hero2 = () => {
           >
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-.5 18v-6h-3v6h-2v-7.5h-1.5v-2h1.5V8.5C7 7.671 7.671 7 8.5 7H11V4.5h2V7h2v2h-2v2h3v1.5h-3v6h-2z" />
           </svg>
-          À propos de nous
+          Contactez-nous maintenant
         </h3>
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
           Express <span className="text-red-500">Plomberie</span>  
         </h2>
         <p className="text-gray-600 mb-6">
@@ -80,13 +80,26 @@ const Hero2 = () => {
         viewport={{ once: true }}
         className="grid grid-cols-1 gap-4 sm:grid-cols-2"
       >
-        <Image
-          className="rounded-lg shadow-lg"
-          src="/images/plumber7.jpg"
-          alt="Image 1"
-          width={280}
-          height={370}
-        />
+        {/* Image 1 avec avis Google */}
+        <div className="relative">
+          <Image
+            className="rounded-lg shadow-lg"
+            src="/images/plumber7.jpg"
+            alt="Image 1"
+            width={280}
+            height={370}
+          />
+          <div className="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-md">
+            <p className="text-gray-800 text-sm font-medium">
+              ⭐️⭐️⭐️⭐️⭐️ (4.7/5)
+            </p>
+            <p className="text-gray-600 text-xs">
+              Basé sur 250 avis Google.
+            </p>
+          </div>
+        </div>
+
+        {/* Image 2 */}
         <Image
           className="rounded-lg shadow-lg"
           src="/images/plumbing-job.jpg"
