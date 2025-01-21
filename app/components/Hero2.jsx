@@ -1,9 +1,8 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import Image from 'next/image';
 
 const ReviewSmall = () => {
   return (
@@ -17,7 +16,7 @@ const ReviewSmall = () => {
         },
       }}
       viewport={{ once: true }}
-      className="flex items-center text-black space-x-4 rounded-lg mt-8"
+      className="flex flex-col sm:flex-row items-center text-white space-y-4 sm:space-y-0 sm:space-x-4 rounded-lg mt-8"
     >
       {/* Avatar Section */}
       <div className="flex -space-x-2">
@@ -40,7 +39,7 @@ const ReviewSmall = () => {
               width={40}
               height={40}
               alt={`avatar${i}`}
-              className="rounded-full border-1 border-black"
+              className="rounded-full border-2 border-black"
             />
           </motion.div>
         ))}
@@ -55,7 +54,7 @@ const ReviewSmall = () => {
           transition: { duration: 0.5 },
         }}
         viewport={{ once: true }}
-        className="ml-4 flex flex-col"
+        className="flex flex-col items-center sm:items-start text-center sm:text-left"
       >
         <div className="flex items-center">
           {Array(5)
@@ -86,7 +85,7 @@ const ReviewSmall = () => {
 
 const Hero2 = () => {
   return (
-    <div className="container mx-auto p-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center pt-32 md:pt-52">
+    <div className="container mx-auto p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center pt-32 md:pt-52">
       {/* Texte à gauche */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -144,42 +143,39 @@ const Hero2 = () => {
             <span className="mr-2">✔️</span> <strong>Fiabilité et solutions durables</strong>: Votre satisfaction, notre priorité.
           </motion.li>
         </ul>
-        <Link
-          href="/contact"
-          className="inline-block bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-500 transition mt-10"
-        >
-          À propos de nous →
-        </Link>
       </motion.div>
 
-      {/* Images à droite */}
+      {/* Images et Review Section à droite */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0, transition: { duration: 0.6 } }}
         viewport={{ once: true }}
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2"
+        className="grid grid-cols-2 sm:grid-cols-1 gap-4"
       >
         {/* Image 1 */}
         <Image
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg w-full h-auto object-cover"
           src="/images/plumber7.jpg"
           alt="Image 1"
           width={280}
           height={370}
+          priority
         />
 
         {/* Image 2 */}
         <Image
-          className="rounded-lg shadow-lg"
+          className="rounded-lg shadow-lg w-full h-auto object-cover"
           src="/images/plumbing-job.jpg"
           alt="Image 2"
           width={320}
           height={530}
         />
-        {/* Review Section */}
-        <ReviewSmall />
-      </motion.div>
 
+        {/* Review Section */}
+        <div className="col-span-2 sm:col-span-1">
+          <ReviewSmall />
+        </div>
+      </motion.div>
     </div>
   );
 };
