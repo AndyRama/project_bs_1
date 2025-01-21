@@ -160,13 +160,16 @@ const Hero2 = () => {
         className="grid grid-cols-1 gap-4 sm:grid-cols-2"
       >
         {/* Image 1 */}
-        <Image
-          className="rounded-lg shadow-lg"
-          src="/images/plumber7.jpg"
-          alt="Image 1"
-          width={280}
-          height={370}
-        />
+        <div className="flex flex-col">
+          <Image
+            className="rounded-lg shadow-lg"
+            src="/images/plumber7.jpg"
+            alt="Image 1"
+            width={280}
+            height={370}
+          />
+          <ReviewSmall />
+        </div>
 
         {/* Image 2 */}
         <Image
@@ -176,8 +179,6 @@ const Hero2 = () => {
           width={320}
           height={530}
         />
-        {/* Review Section */}
-        <ReviewSmall />
       </motion.div>
 
     </div>
