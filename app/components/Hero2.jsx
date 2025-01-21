@@ -1,9 +1,87 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+import Image from 'next/image';
+
+const ReviewSmall = () => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 0.5,
+        },
+      }}
+      viewport={{ once: true }}
+      className="flex items-center text-white space-x-4 rounded-lg mt-8"
+    >
+      {/* Avatar Section */}
+      <div className="flex -space-x-2">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <motion.div
+            key={i}
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: i * 0.1,
+                duration: 0.3,
+              },
+            }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src={`/images/user${i}.jpg`}
+              width={40}
+              height={40}
+              alt={`avatar${i}`}
+              className="rounded-full border-2 border-black"
+            />
+          </motion.div>
+        ))}
+      </div>
+
+      {/* Review Details */}
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: { duration: 0.5 },
+        }}
+        viewport={{ once: true }}
+        className="ml-4 flex flex-col"
+      >
+        <div className="flex items-center">
+          {Array(5)
+            .fill()
+            .map((_, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{
+                  opacity: 1,
+                  scale: 1,
+                  transition: { delay: index * 0.1, duration: 0.3 },
+                }}
+                viewport={{ once: true }}
+                className="w-5 h-5 fill-yellow-400 text-yellow-400"
+              >
+                ⭐
+              </motion.span>
+            ))}
+        </div>
+        <p className="text-md mt-3">
+          3500+ followers <br /> sur Instagram
+        </p>
+      </motion.div>
+    </motion.div>
+  );
+};
 
 const Hero2 = () => {
   return (
@@ -26,7 +104,7 @@ const Hero2 = () => {
           Contactez-nous maintenant
         </h3>
         <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">
-          Express <span className="text-red-500">Plomberie</span>  
+          Express <span className="text-red-500">Plomberie</span>
         </h2>
         <p className="text-gray-600 mb-6">
           Notre mission est de vous accompagner face à toutes vos urgences en plomberie, 24h/24 et 7j/7. Que ce soit pour une fuite d&apos;eau, un débouchage ou une réparation urgente, nos techniciens qualifiés interviennent rapidement pour garantir votre sérénité.
@@ -65,12 +143,6 @@ const Hero2 = () => {
             <span className="mr-2">✔️</span> <strong>Fiabilité et solutions durables</strong>: Votre satisfaction, notre priorité.
           </motion.li>
         </ul>
-        <Link
-          href="/contact"
-          className="inline-block bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-500 transition mt-10"
-        >
-          À propos de nous →
-        </Link>
       </motion.div>
 
       {/* Images à droite */}
@@ -80,24 +152,14 @@ const Hero2 = () => {
         viewport={{ once: true }}
         className="grid grid-cols-1 gap-4 sm:grid-cols-2"
       >
-        {/* Image 1 avec avis Google */}
-        <div className="relative">
-          <Image
-            className="rounded-lg shadow-lg"
-            src="/images/plumber7.jpg"
-            alt="Image 1"
-            width={280}
-            height={370}
-          />
-          <div className="absolute bottom-4 left-4 bg-white p-4 rounded-lg shadow-md">
-            <p className="text-gray-800 text-sm font-medium">
-              ⭐️⭐️⭐️⭐️⭐️ (4.7/5)
-            </p>
-            <p className="text-gray-600 text-xs">
-              Basé sur 250 avis Google.
-            </p>
-          </div>
-        </div>
+        {/* Image 1 */}
+        <Image
+          className="rounded-lg shadow-lg"
+          src="/images/plumber7.jpg"
+          alt="Image 1"
+          width={280}
+          height={370}
+        />
 
         {/* Image 2 */}
         <Image
@@ -108,6 +170,9 @@ const Hero2 = () => {
           height={530}
         />
       </motion.div>
+
+      {/* Review Section */}
+      <ReviewSmall />
     </div>
   );
 };
