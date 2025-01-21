@@ -57,6 +57,12 @@ const ReviewSmall = () => {
         viewport={{ once: true }}
         className="ml-4 flex flex-col"
       >
+        <p className="text-md mt-3">
+          Nos clients déclarent satisfaits <br /> de nos précieux services
+        </p>
+        <p className="text-md mt-3">
+          4.7/5 avis sur Google
+        </p>
         <div className="flex items-center">
           {Array(5)
             .fill()
@@ -76,9 +82,6 @@ const ReviewSmall = () => {
               </motion.span>
             ))}
         </div>
-        <p className="text-md mt-3">
-          3500+ followers <br /> sur Instagram
-        </p>
       </motion.div>
     </motion.div>
   );
