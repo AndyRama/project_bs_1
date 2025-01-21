@@ -143,6 +143,12 @@ const Hero2 = () => {
             <span className="mr-2">✔️</span> <strong>Fiabilité et solutions durables</strong>: Votre satisfaction, notre priorité.
           </motion.li>
         </ul>
+        <Link
+          href="/contact"
+          className="inline-block bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-500 transition mt-10"
+        >
+          À propos de nous →
+        </Link>
       </motion.div>
 
       {/* Images à droite */}
@@ -160,8 +166,6 @@ const Hero2 = () => {
           width={280}
           height={370}
         />
-        {/* Review Section */}
-        <ReviewSmall />
 
         {/* Image 2 */}
         <Image
@@ -171,6 +175,8 @@ const Hero2 = () => {
           width={320}
           height={530}
         />
+        {/* Review Section */}
+        <ReviewSmall />
       </motion.div>
 
     </div>
