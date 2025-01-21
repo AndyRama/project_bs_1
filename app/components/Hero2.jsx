@@ -46,6 +46,10 @@ const ReviewSmall = () => {
         ))}
       </div>
 
+      <p className="text-md mt-3">
+        Nos clients déclarent <br /> satisfaits  de nos <br /> précieux services
+      </p>
+
       {/* Review Details */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -57,9 +61,6 @@ const ReviewSmall = () => {
         viewport={{ once: true }}
         className="ml-4 flex flex-col"
       >
-        <p className="text-md mt-3">
-          Nos clients déclarent satisfaits <br /> de nos précieux services
-        </p>
         <p className="text-md mt-3">
           4.7/5 avis sur Google
         </p>
