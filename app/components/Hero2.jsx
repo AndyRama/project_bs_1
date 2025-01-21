@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const ReviewSmall = () => {
   return (
@@ -39,7 +40,7 @@ const ReviewSmall = () => {
               width={40}
               height={40}
               alt={`avatar${i}`}
-              className="rounded-full border-2 border-black"
+              className="rounded-full border-1 border-black"
             />
           </motion.div>
         ))}
