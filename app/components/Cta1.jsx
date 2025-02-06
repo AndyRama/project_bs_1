@@ -13,7 +13,7 @@ const CTA1 = () => {
           <p className="text-lg bg-red-500 inline-block px-4 py-4 rounded-md font-bold">
             en cas d&apos;urgence :{' '}
             <span className="bg-[#1D1D1D] px-2 py-2 rounded-md">
-              06 56 34 69 55
+            06.69.71.95.89
             </span>
           </p>
         </div>

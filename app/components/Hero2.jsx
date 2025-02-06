@@ -45,8 +45,7 @@ const ReviewSmall = () => {
           </motion.div>
         ))}
       </div>
-      <br/>
-
+      
       {/* Review Details */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}

@@ -133,7 +133,8 @@ export default function Navigation() {
                 En Cas D&apos;urgence :
               </span>
               <Link
-                href='tel:0669719589'
+                // href='tel:0669719589'
+                href="#"
                 alt='Btn Subcribes'
                 className='hidden lg:flex align-center text-[22px] tracking-2[2px] w-[auto] font-bold uppercase py-3
                 lg:px-2 px-4 hover:text-red-500 hover:shadow-2xl hover:bg-transparent border border-red-500 text-white
